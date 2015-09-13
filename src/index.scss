@@ -148,17 +148,26 @@ input[type="search"]::-webkit-search-decoration {
   width: 80%;
   height: .54rem;
   text-align: center;
-  margin: 0 auto .15rem;
   border-radius: 4px;
+  margin: 0 auto .15rem;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
   background: {
     image: url('http://7xlrkz.com1.z0.glb.clouddn.com/button_background.png');
-    size: 100% .54rem;
+    size: 100% 200%;
+    position: 0 0;
   };
   span {
     color: $btnTextColor;
     font-size: .16rem;
     line-height: .52rem;
     text-shadow: 0 0 10px rgba(253, 194, 145, .8);
+  }
+  &:focus,
+  &:active {
+    outline: none;
+    background: {
+      position: 0 -100%;
+    };
   }
 }
 //common class end

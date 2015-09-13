@@ -54,7 +54,7 @@
 
 	__webpack_require__(157);
 
-	var _startButton = __webpack_require__(164);
+	var _startButton = __webpack_require__(161);
 
 	var _startButton2 = _interopRequireDefault(_startButton);
 
@@ -18235,7 +18235,7 @@
 
 
 	// module
-	exports.push([module.id, "*,\n*:before,\n*:after {\n  box-sizing: border-box; }\n\nhtml {\n  font-size: 80px;\n  -webkit-text-size-adjust: 100%;\n      -ms-text-size-adjust: 100%;\n          text-size-adjust: 100%;\n  font-family: Arial, \"Microsoft Yahei\", Helvetica, sans-serif; }\n  @media (min-device-width: 330px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 360px) {\n    html {\n      font-size: 95px; } }\n  @media (min-device-width: 400px) {\n    html {\n      font-size: 110px; } }\n  @media (max-device-width: 321px) and (min-device-height: 500px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 375px) and (max-device-width: 667px) {\n    html {\n      font-size: 115px; } }\n  @media (min-device-width: 414px) and (max-device-width: 736px) {\n    html {\n      font-size: 125px; } }\n\nbody {\n  font-size: .14rem;\n  line-height: 1.42857143; }\n\nfooter,\nheader,\nnav,\nsection {\n  display: block; }\n\na {\n  text-decoration: none;\n  background-color: transparent; }\n\na:hover {\n  outline: 0;\n  text-decoration: none; }\n\na:focus {\n  outline: none;\n  text-decoration: none; }\n\na:active {\n  outline: 0; }\n\np {\n  margin: 0 0 10px 0; }\n\nb,\nstrong {\n  font-weight: bold; }\n\ndfn {\n  font-style: italic; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-weight: normal; }\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n\nimg {\n  border: 0; }\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  font: inherit;\n  margin: 0; }\n\nbutton {\n  overflow: visible; }\n\nbutton:focus {\n  outline: none !important; }\n\nbutton,\nselect {\n  text-transform: none; }\n\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer; }\n\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\nbutton,\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  border: none; }\n\ninput[type=\"submit\"]:focus {\n  outline: none; }\n\ninput {\n  line-height: normal; }\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0; }\n\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  box-sizing: content-box; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n.clearfix:before,\n.clearfix:after {\n  content: \" \";\n  display: table; }\n\n.clearfix:after {\n  clear: both; }\n\n.btn {\n  cursor: pointer;\n  width: 80%;\n  height: .54rem;\n  text-align: center;\n  margin: 0 auto 0.15rem;\n  border-radius: 4px;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/button_background.png\");\n  background-size: 100% 0.54rem; }\n  .btn span {\n    color: #FDC291;\n    font-size: .16rem;\n    line-height: .52rem;\n    text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n\n@-webkit-keyframes door-enter {\n  from {\n    -webkit-transform: scale3d(0, 1, 1);\n            transform: scale3d(0, 1, 1);\n    opacity: 0; }\n  to {\n    -webkit-transform: scale3d(1, 1, 0.1);\n            transform: scale3d(1, 1, 0.1);\n    opacity: 1; } }\n\n@keyframes door-enter {\n  from {\n    -webkit-transform: scale3d(0, 1, 1);\n            transform: scale3d(0, 1, 1);\n    opacity: 0; }\n  to {\n    -webkit-transform: scale3d(1, 1, 0.1);\n            transform: scale3d(1, 1, 0.1);\n    opacity: 1; } }\n\n.door-enter {\n  -webkit-animation: door-enter 0.2s both ease-in-out;\n          animation: door-enter 0.2s both ease-in-out; }\n\n@-webkit-keyframes zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n    opacity: 0; }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n@keyframes zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n    opacity: 0; }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n.zoom-enter {\n  -webkit-animation: zoom-enter 0.3s both cubic-bezier(0.4, 0, 0, 1.5);\n          animation: zoom-enter 0.3s both cubic-bezier(0.4, 0, 0, 1.5); }\n", ""]);
+	exports.push([module.id, "*,\n*:before,\n*:after {\n  box-sizing: border-box; }\n\nhtml {\n  font-size: 80px;\n  -webkit-text-size-adjust: 100%;\n      -ms-text-size-adjust: 100%;\n          text-size-adjust: 100%;\n  font-family: Arial, \"Microsoft Yahei\", Helvetica, sans-serif; }\n  @media (min-device-width: 330px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 360px) {\n    html {\n      font-size: 95px; } }\n  @media (min-device-width: 400px) {\n    html {\n      font-size: 110px; } }\n  @media (max-device-width: 321px) and (min-device-height: 500px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 375px) and (max-device-width: 667px) {\n    html {\n      font-size: 115px; } }\n  @media (min-device-width: 414px) and (max-device-width: 736px) {\n    html {\n      font-size: 125px; } }\n\nbody {\n  font-size: .14rem;\n  line-height: 1.42857143; }\n\nfooter,\nheader,\nnav,\nsection {\n  display: block; }\n\na {\n  text-decoration: none;\n  background-color: transparent; }\n\na:hover {\n  outline: 0;\n  text-decoration: none; }\n\na:focus {\n  outline: none;\n  text-decoration: none; }\n\na:active {\n  outline: 0; }\n\np {\n  margin: 0 0 10px 0; }\n\nb,\nstrong {\n  font-weight: bold; }\n\ndfn {\n  font-style: italic; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-weight: normal; }\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n\nimg {\n  border: 0; }\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  font: inherit;\n  margin: 0; }\n\nbutton {\n  overflow: visible; }\n\nbutton:focus {\n  outline: none !important; }\n\nbutton,\nselect {\n  text-transform: none; }\n\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer; }\n\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\nbutton,\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  border: none; }\n\ninput[type=\"submit\"]:focus {\n  outline: none; }\n\ninput {\n  line-height: normal; }\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0; }\n\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  box-sizing: content-box; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n.clearfix:before,\n.clearfix:after {\n  content: \" \";\n  display: table; }\n\n.clearfix:after {\n  clear: both; }\n\n.btn {\n  cursor: pointer;\n  width: 80%;\n  height: .54rem;\n  text-align: center;\n  border-radius: 4px;\n  margin: 0 auto 0.15rem;\n  -webkit-tap-highlight-color: transparent;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/button_background.png\");\n  background-size: 100% 200%;\n  background-position: 0 0; }\n  .btn span {\n    color: #FDC291;\n    font-size: .16rem;\n    line-height: .52rem;\n    text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n  .btn:focus,\n  .btn:active {\n    outline: none;\n    background-position: 0 -100%; }\n\n@-webkit-keyframes door-enter {\n  from {\n    -webkit-transform: scale3d(0, 1, 1);\n            transform: scale3d(0, 1, 1);\n    opacity: 0; }\n  to {\n    -webkit-transform: scale3d(1, 1, 0.1);\n            transform: scale3d(1, 1, 0.1);\n    opacity: 1; } }\n\n@keyframes door-enter {\n  from {\n    -webkit-transform: scale3d(0, 1, 1);\n            transform: scale3d(0, 1, 1);\n    opacity: 0; }\n  to {\n    -webkit-transform: scale3d(1, 1, 0.1);\n            transform: scale3d(1, 1, 0.1);\n    opacity: 1; } }\n\n.door-enter {\n  -webkit-animation: door-enter 0.2s both ease-in-out;\n          animation: door-enter 0.2s both ease-in-out; }\n\n@-webkit-keyframes zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n    opacity: 0; }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n@keyframes zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n    opacity: 0; }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n.zoom-enter {\n  -webkit-animation: zoom-enter 0.3s both cubic-bezier(0.4, 0, 0, 1.5);\n          animation: zoom-enter 0.3s both cubic-bezier(0.4, 0, 0, 1.5); }\n", ""]);
 
 	// exports
 
@@ -18546,6 +18546,213 @@
 
 	__webpack_require__(162);
 
+	var _controller = __webpack_require__(164);
+
+	var _controller2 = _interopRequireDefault(_controller);
+
+	var StartButton = (function (_Component) {
+	    _inherits(StartButton, _Component);
+
+	    function StartButton(props) {
+	        _classCallCheck(this, StartButton);
+
+	        _get(Object.getPrototypeOf(StartButton.prototype), 'constructor', this).call(this, props);
+	    }
+
+	    _createClass(StartButton, [{
+	        key: 'start',
+	        value: function start() {
+	            _react2['default'].render(_react2['default'].createElement(_controller2['default'], null), document.getElementById('app'));
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2['default'].createElement(
+	                'div',
+	                { className: 'btn start-btn zoom-enter', onClick: this.start },
+	                _react2['default'].createElement(
+	                    'span',
+	                    null,
+	                    '开 始'
+	                )
+	            );
+	        }
+	    }]);
+
+	    return StartButton;
+	})(_react.Component);
+
+	exports['default'] = StartButton;
+	module.exports = exports['default'];
+
+/***/ },
+/* 162 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(163);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(160)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./index.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./index.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 163 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(159)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".start-btn {\n  position: absolute;\n  top: 55%;\n  left: 10%; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 164 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(165);
+
+	var _choose = __webpack_require__(167);
+
+	var _choose2 = _interopRequireDefault(_choose);
+
+	var Controller = (function (_Component) {
+	    _inherits(Controller, _Component);
+
+	    function Controller(props) {
+	        _classCallCheck(this, Controller);
+
+	        _get(Object.getPrototypeOf(Controller.prototype), 'constructor', this).call(this, props);
+
+	        this.state = {
+	            showChoose: true,
+	            showQuestions: false
+	        };
+	    }
+
+	    _createClass(Controller, [{
+	        key: 'handleChoose',
+	        value: function handleChoose(index) {
+	            console.log(index);
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2['default'].createElement(_choose2['default'], { handleChoose: this.handleChoose });
+	        }
+	    }]);
+
+	    return Controller;
+	})(_react.Component);
+
+	exports['default'] = Controller;
+	module.exports = exports['default'];
+
+/***/ },
+/* 165 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(166);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(160)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./index.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./index.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 166 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(159)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "#app {\n  position: relative; }\n  @media (max-width: 480px) {\n    #app {\n      width: 100%; } }\n  @media (min-width: 481px) {\n    #app {\n      width: 480px;\n      margin: 0 auto; } }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 167 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(168);
+
 	var Choose = (function (_Component) {
 	    _inherits(Choose, _Component);
 
@@ -18602,213 +18809,6 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 162 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(163);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(160)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./index.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./index.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 163 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(159)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".choose-container {\n  height: 100%;\n  overflow: hidden;\n  background: #12110F; }\n\n.choose-title {\n  color: #FDC291;\n  text-align: center;\n  margin: 0.9rem 0 0.3rem;\n  text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n\n.choose-logo {\n  position: absolute;\n  width: 1.2rem; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 164 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	__webpack_require__(165);
-
-	var _controller = __webpack_require__(167);
-
-	var _controller2 = _interopRequireDefault(_controller);
-
-	var StartButton = (function (_Component) {
-	    _inherits(StartButton, _Component);
-
-	    function StartButton(props) {
-	        _classCallCheck(this, StartButton);
-
-	        _get(Object.getPrototypeOf(StartButton.prototype), 'constructor', this).call(this, props);
-	    }
-
-	    _createClass(StartButton, [{
-	        key: 'start',
-	        value: function start() {
-	            _react2['default'].render(_react2['default'].createElement(_controller2['default'], null), document.getElementById('app'));
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            return _react2['default'].createElement(
-	                'div',
-	                { className: 'btn start-btn zoom-enter', onClick: this.start },
-	                _react2['default'].createElement(
-	                    'span',
-	                    null,
-	                    '开 始'
-	                )
-	            );
-	        }
-	    }]);
-
-	    return StartButton;
-	})(_react.Component);
-
-	exports['default'] = StartButton;
-	module.exports = exports['default'];
-
-/***/ },
-/* 165 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(166);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(160)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./index.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./index.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 166 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(159)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".start-btn {\n  position: absolute;\n  top: 55%;\n  left: 10%; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 167 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	__webpack_require__(168);
-
-	var _choose = __webpack_require__(161);
-
-	var _choose2 = _interopRequireDefault(_choose);
-
-	var Controller = (function (_Component) {
-	    _inherits(Controller, _Component);
-
-	    function Controller(props) {
-	        _classCallCheck(this, Controller);
-
-	        _get(Object.getPrototypeOf(Controller.prototype), 'constructor', this).call(this, props);
-
-	        this.state = {
-	            showChoose: true,
-	            showQuestions: false
-	        };
-	    }
-
-	    _createClass(Controller, [{
-	        key: 'handleChoose',
-	        value: function handleChoose(index) {
-	            console.log(index);
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            return _react2['default'].createElement(_choose2['default'], { handleChoose: this.handleChoose });
-	        }
-	    }]);
-
-	    return Controller;
-	})(_react.Component);
-
-	exports['default'] = Controller;
-	module.exports = exports['default'];
-
-/***/ },
 /* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -18843,7 +18843,7 @@
 
 
 	// module
-	exports.push([module.id, "#app {\n  position: relative; }\n  @media (max-width: 480px) {\n    #app {\n      width: 100%; } }\n  @media (min-width: 481px) {\n    #app {\n      width: 480px;\n      margin: 0 auto; } }\n", ""]);
+	exports.push([module.id, ".choose-container {\n  height: 100%;\n  overflow: hidden;\n  background: #12110F; }\n\n.choose-title {\n  color: #FDC291;\n  text-align: center;\n  margin: 0.9rem 0 0.3rem;\n  text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n\n.choose-logo {\n  position: absolute;\n  width: 1.2rem; }\n", ""]);
 
 	// exports
 
