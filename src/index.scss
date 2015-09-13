@@ -7,15 +7,26 @@
   box-sizing: border-box;
 }
 html {
-  min-height: 100%;
+  font-size: 80px;
   text-size-adjust: 100%;
-  font-family: "Open Sans",sans-serif;
+  font-family: Arial, "Microsoft Yahei", Helvetica, sans-serif;
+  //small android
+  @media (min-device-width: 330px ) { font-size: 90px }
+  //medium android
+  @media (min-device-width: 360px ) { font-size: 95px }
+  //big android
+  @media (min-device-width: 400px ) { font-size: 110px }
+  //iphone 5
+  @media (max-device-width : 321px) and (min-device-height : 500px) { font-size: 90px }
+  //iphone 6
+  @media (min-device-width : 375px) and (max-device-width : 667px) { font-size: 115px }
+  //iphone 6 plus
+  @media (min-device-width : 414px) and (max-device-width : 736px) { font-size: 125px }
 }
 body {
   margin: 0;
-  font-size: 14px;
+  font-size: .14rem;
   line-height: 1.42857143;
-  min-height: 100%;
 }
 footer,
 header,

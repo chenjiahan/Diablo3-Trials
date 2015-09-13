@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import './index.scss';
-
-import Loading from './loading';
+import Choose from './choose';
 
 class App extends Component {
     constructor(props) {
@@ -10,12 +9,15 @@ class App extends Component {
 
     render() {
         return (
-            <Loading />
+            <Choose />
         )
     }
 }
 
-React.render(
-    <App />,
-    document.getElementById('app')
-);
+
+window.onload = function() {
+    React.render(
+        <App />,
+        document.getElementById('app')
+    );
+}

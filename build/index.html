@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,maximum-scale=1"/>
     <title>暗黑3达人</title>
+
+    <style>
+        html, body, #app, .loading-container {
+            height: 100%;
+        }
+        .loading-container {
+            background: #12110F url('../img/loading_background.jpg') center / cover no-repeat;
+        }
+        .loading-sand {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            margin: -32px 0 0 -32px;
+        }
+    </style>
 </head>
+
 <body>
-<div id="app"></div>
-<script src="index.js"></script>
+
+    <div id="app">
+        <!-- loading start -->
+        <div class="loading-container">
+            <img src="../img/loading.gif" class="loading-sand" alt="loading"/>
+        </div>
+        <!-- loading end -->
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

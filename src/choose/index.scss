@@ -1,0 +1,35 @@
+@import '../config';
+
+.choose-container {
+  height: 100%;
+  overflow: hidden;
+  background: $backgroundColor;
+}
+.choose-title {
+  color: #FDC291;
+  text-align: center;
+  margin: .9rem 0 .3rem;
+  text-shadow: 0 0 10px rgba(253, 194, 145, .8);
+}
+.choose-btn {
+  cursor: pointer;
+  width: 80%;
+  height: .54rem;
+  text-align: center;
+  margin: 0 auto .15rem;
+  border-radius: 4px;
+  background: {
+    image: url('../../img/button_background.png');
+    size: 100% .54rem;
+  };
+  span {
+    color: #FDC291;
+    font-size: .16rem;
+    line-height: .52rem;
+    text-shadow: 0 0 10px rgba(253, 194, 145, .8);
+  }
+}
+.choose-logo {
+  position: absolute;
+  width: 1.2rem;
+}
