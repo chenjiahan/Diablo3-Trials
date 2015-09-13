@@ -73,12 +73,20 @@
 	        _classCallCheck(this, App);
 
 	        _get(Object.getPrototypeOf(App.prototype), 'constructor', this).call(this, props);
+
+	        this.state = {
+	            showChoose: true,
+	            showQuestions: false
+	        };
 	    }
 
 	    _createClass(App, [{
+	        key: 'handleChoose',
+	        value: function handleChoose() {}
+	    }, {
 	        key: 'render',
 	        value: function render() {
-	            return _react2['default'].createElement(_choose2['default'], null);
+	            return _react2['default'].createElement(_choose2['default'], { handleChoose: this.handleChoose });
 	        }
 	    }]);
 
@@ -86,7 +94,16 @@
 	})(_react.Component);
 
 	window.onload = function () {
-	    _react2['default'].render(_react2['default'].createElement(App, null), document.getElementById('app'));
+
+	    var app = document.getElementById('app');
+	    var loadingArea = document.getElementsByClassName('loading-info')[0];
+
+	    loadingArea.innerHTML = '开始游戏';
+
+	    //React.render(
+	    //    <App />,
+	    //    app
+	    //);
 	};
 
 /***/ },
@@ -18602,7 +18619,7 @@
 	            return _react2['default'].createElement(
 	                'div',
 	                { className: 'choose-container' },
-	                _react2['default'].createElement('img', { src: '../img/logo.png', className: 'choose-logo' }),
+	                _react2['default'].createElement('img', { src: 'img/logo.png', className: 'choose-logo' }),
 	                _react2['default'].createElement(
 	                    'h1',
 	                    { className: 'choose-title' },

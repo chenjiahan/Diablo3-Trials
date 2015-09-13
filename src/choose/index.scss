@@ -6,7 +6,7 @@
   background: $backgroundColor;
 }
 .choose-title {
-  color: #FDC291;
+  color: $btnTextColor;
   text-align: center;
   margin: .9rem 0 .3rem;
   text-shadow: 0 0 10px rgba(253, 194, 145, .8);
@@ -19,11 +19,11 @@
   margin: 0 auto .15rem;
   border-radius: 4px;
   background: {
-    image: url('../../img/button_background.png');
+    image: url('../../build/img/button_background.png');
     size: 100% .54rem;
   };
   span {
-    color: #FDC291;
+    color: $btnTextColor;
     font-size: .16rem;
     line-height: .52rem;
     text-shadow: 0 0 10px rgba(253, 194, 145, .8);

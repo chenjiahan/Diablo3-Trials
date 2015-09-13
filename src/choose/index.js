@@ -15,7 +15,7 @@ class Choose extends Component {
 
         return (
             <div className="choose-container">
-                <img src="../img/logo.png" className="choose-logo"/>
+                <img src="img/logo.png" className="choose-logo"/>
                 <h1 className="choose-title">暗黑3达人测验</h1>
                 {buttons}
             </div>

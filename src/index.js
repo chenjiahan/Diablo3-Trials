@@ -5,19 +5,34 @@ import Choose from './choose';
 class App extends Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            showChoose: true,
+            showQuestions: false
+        }
+    }
+
+    handleChoose() {
+
     }
 
     render() {
         return (
-            <Choose />
+            <Choose handleChoose={this.handleChoose} />
         )
     }
 }
 
 
 window.onload = function() {
-    React.render(
-        <App />,
-        document.getElementById('app')
-    );
+
+    let app = document.getElementById('app');
+    let loadingArea = document.getElementsByClassName('loading-info')[0];
+
+    loadingArea.innerHTML = '开始游戏';
+
+    //React.render(
+    //    <App />,
+    //    app
+    //);
 }

@@ -10,23 +10,28 @@
             height: 100%;
         }
         .loading-container {
-            background: #12110F url('../img/loading_background.jpg') center / cover no-repeat;
+            background: #12110F url('img/loading_background.jpg') center / cover no-repeat;
         }
-        .loading-sand {
+        .loading-info {
             position: absolute;
-            top: 60%;
+            top: 52%;
             left: 50%;
-            margin: -32px 0 0 -32px;
+            color: #A99877;
+            text-align: center;
+            margin: 0 0 0 -32px;
+            font-size: 16px;
         }
     </style>
 </head>
 
 <body>
-
     <div id="app">
         <!-- loading start -->
         <div class="loading-container">
-            <img src="../img/loading.gif" class="loading-sand" alt="loading"/>
+            <div class="loading-info">
+                <img src="img/loading.gif" alt="loading"/>
+                <p>载入中..</p>
+            </div>
         </div>
         <!-- loading end -->
     </div>
