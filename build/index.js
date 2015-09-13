@@ -82,7 +82,9 @@
 
 	    _createClass(App, [{
 	        key: 'handleChoose',
-	        value: function handleChoose() {}
+	        value: function handleChoose(index) {
+	            console.log(index);
+	        }
 	    }, {
 	        key: 'render',
 	        value: function render() {
@@ -93,17 +95,40 @@
 	    return App;
 	})(_react.Component);
 
+	var StartButton = (function (_Component2) {
+	    _inherits(StartButton, _Component2);
+
+	    function StartButton(props) {
+	        _classCallCheck(this, StartButton);
+
+	        _get(Object.getPrototypeOf(StartButton.prototype), 'constructor', this).call(this, props);
+	    }
+
+	    _createClass(StartButton, [{
+	        key: 'start',
+	        value: function start() {
+	            _react2['default'].render(_react2['default'].createElement(App, null), document.getElementById('app'));
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2['default'].createElement(
+	                'div',
+	                { className: 'btn begin-btn', onClick: this.start },
+	                _react2['default'].createElement(
+	                    'span',
+	                    null,
+	                    '开 始'
+	                )
+	            );
+	        }
+	    }]);
+
+	    return StartButton;
+	})(_react.Component);
+
 	window.onload = function () {
-
-	    var app = document.getElementById('app');
-	    var loadingArea = document.getElementsByClassName('loading-info')[0];
-
-	    loadingArea.innerHTML = '开始游戏';
-
-	    //React.render(
-	    //    <App />,
-	    //    app
-	    //);
+	    _react2['default'].render(_react2['default'].createElement(StartButton, null), document.getElementsByClassName('loading-container')[0]);
 	};
 
 /***/ },
@@ -18279,7 +18304,7 @@
 
 
 	// module
-	exports.push([module.id, "/*--normalize--*/\n*,\n*:before,\n*:after {\n  box-sizing: border-box; }\n\nhtml {\n  font-size: 80px;\n  -webkit-text-size-adjust: 100%;\n      -ms-text-size-adjust: 100%;\n          text-size-adjust: 100%;\n  font-family: Arial, \"Microsoft Yahei\", Helvetica, sans-serif; }\n  @media (min-device-width: 330px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 360px) {\n    html {\n      font-size: 95px; } }\n  @media (min-device-width: 400px) {\n    html {\n      font-size: 110px; } }\n  @media (max-device-width: 321px) and (min-device-height: 500px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 375px) and (max-device-width: 667px) {\n    html {\n      font-size: 115px; } }\n  @media (min-device-width: 414px) and (max-device-width: 736px) {\n    html {\n      font-size: 125px; } }\n\nbody {\n  margin: 0;\n  font-size: .14rem;\n  line-height: 1.42857143; }\n\nfooter,\nheader,\nnav,\nsection {\n  display: block; }\n\na {\n  text-decoration: none;\n  background-color: transparent; }\n\na:hover {\n  outline: 0;\n  text-decoration: none; }\n\na:focus {\n  outline: none;\n  text-decoration: none; }\n\na:active {\n  outline: 0; }\n\np {\n  margin: 0 0 10px 0; }\n\nb,\nstrong {\n  font-weight: bold; }\n\ndfn {\n  font-style: italic; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-weight: normal; }\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n\nimg {\n  border: 0; }\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  font: inherit;\n  margin: 0; }\n\nbutton {\n  overflow: visible; }\n\nbutton:focus {\n  outline: none !important; }\n\nbutton,\nselect {\n  text-transform: none; }\n\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer; }\n\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\nbutton,\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  border: none; }\n\ninput[type=\"submit\"]:focus {\n  outline: none; }\n\ninput {\n  line-height: normal; }\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0; }\n\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  box-sizing: content-box; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n.clearfix:before,\n.clearfix:after {\n  content: \" \";\n  display: table; }\n\n.clearfix:after {\n  clear: both; }\n\n@media (max-width: 480px) {\n  #app {\n    width: 100%; } }\n\n@media (min-width: 481px) {\n  #app {\n    width: 480px;\n    margin: 0 auto; } }\n", ""]);
+	exports.push([module.id, "/*--normalize--*/\n*,\n*:before,\n*:after {\n  box-sizing: border-box; }\n\nhtml {\n  font-size: 80px;\n  -webkit-text-size-adjust: 100%;\n      -ms-text-size-adjust: 100%;\n          text-size-adjust: 100%;\n  font-family: Arial, \"Microsoft Yahei\", Helvetica, sans-serif; }\n  @media (min-device-width: 330px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 360px) {\n    html {\n      font-size: 95px; } }\n  @media (min-device-width: 400px) {\n    html {\n      font-size: 110px; } }\n  @media (max-device-width: 321px) and (min-device-height: 500px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 375px) and (max-device-width: 667px) {\n    html {\n      font-size: 115px; } }\n  @media (min-device-width: 414px) and (max-device-width: 736px) {\n    html {\n      font-size: 125px; } }\n\nbody {\n  font-size: .14rem;\n  line-height: 1.42857143; }\n\nfooter,\nheader,\nnav,\nsection {\n  display: block; }\n\na {\n  text-decoration: none;\n  background-color: transparent; }\n\na:hover {\n  outline: 0;\n  text-decoration: none; }\n\na:focus {\n  outline: none;\n  text-decoration: none; }\n\na:active {\n  outline: 0; }\n\np {\n  margin: 0 0 10px 0; }\n\nb,\nstrong {\n  font-weight: bold; }\n\ndfn {\n  font-style: italic; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-weight: normal; }\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n\nimg {\n  border: 0; }\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  font: inherit;\n  margin: 0; }\n\nbutton {\n  overflow: visible; }\n\nbutton:focus {\n  outline: none !important; }\n\nbutton,\nselect {\n  text-transform: none; }\n\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer; }\n\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\nbutton,\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  border: none; }\n\ninput[type=\"submit\"]:focus {\n  outline: none; }\n\ninput {\n  line-height: normal; }\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0; }\n\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  box-sizing: content-box; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n.clearfix:before,\n.clearfix:after {\n  content: \" \";\n  display: table; }\n\n.clearfix:after {\n  clear: both; }\n\n@media (max-width: 480px) {\n  #app {\n    width: 100%; } }\n\n@media (min-width: 481px) {\n  #app {\n    width: 480px;\n    margin: 0 auto; } }\n\n.btn {\n  cursor: pointer;\n  width: 80%;\n  height: .54rem;\n  text-align: center;\n  margin: 0 auto 0.15rem;\n  border-radius: 4px;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/button_background.png\");\n  background-size: 100% 0.54rem; }\n  .btn span {\n    color: #FDC291;\n    font-size: .16rem;\n    line-height: .52rem;\n    text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n\n.begin-btn {\n  position: absolute;\n  top: 55%;\n  left: 10%; }\n", ""]);
 
 	// exports
 
@@ -18604,22 +18629,26 @@
 	        value: function render() {
 
 	            var type = ['普 通', '困 难', '专 家', '大 师', '折 磨'];
-	            var buttons = type.map(function (value) {
+	            var buttons = type.map((function (value, index) {
 	                return _react2['default'].createElement(
 	                    'div',
-	                    { className: 'choose-btn' },
+	                    {
+	                        key: index,
+	                        className: 'btn',
+	                        onClick: this.props.handleChoose.bind(this, index)
+	                    },
 	                    _react2['default'].createElement(
 	                        'span',
 	                        null,
 	                        value
 	                    )
 	                );
-	            });
+	            }).bind(this));
 
 	            return _react2['default'].createElement(
 	                'div',
 	                { className: 'choose-container' },
-	                _react2['default'].createElement('img', { src: 'img/logo.png', className: 'choose-logo' }),
+	                _react2['default'].createElement('img', { src: 'http://7xlrkz.com1.z0.glb.clouddn.com/logo.png', className: 'choose-logo' }),
 	                _react2['default'].createElement(
 	                    'h1',
 	                    { className: 'choose-title' },
@@ -18671,16 +18700,10 @@
 
 
 	// module
-	exports.push([module.id, ".choose-container {\n  height: 100%;\n  overflow: hidden;\n  background: #12110F; }\n\n.choose-title {\n  color: #FDC291;\n  text-align: center;\n  margin: 0.9rem 0 0.3rem;\n  text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n\n.choose-btn {\n  cursor: pointer;\n  width: 80%;\n  height: .54rem;\n  text-align: center;\n  margin: 0 auto 0.15rem;\n  border-radius: 4px;\n  background-image: url(" + __webpack_require__(164) + ");\n  background-size: 100% 0.54rem; }\n  .choose-btn span {\n    color: #FDC291;\n    font-size: .16rem;\n    line-height: .52rem;\n    text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n\n.choose-logo {\n  position: absolute;\n  width: 1.2rem; }\n", ""]);
+	exports.push([module.id, ".choose-container {\n  height: 100%;\n  overflow: hidden;\n  background: #12110F; }\n\n.choose-title {\n  color: #FDC291;\n  text-align: center;\n  margin: 0.9rem 0 0.3rem;\n  text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n\n.choose-logo {\n  position: absolute;\n  width: 1.2rem; }\n", ""]);
 
 	// exports
 
-
-/***/ },
-/* 164 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "b26c2ff4f645dd7c0bdfd25e0528d926.png"
 
 /***/ }
 /******/ ]);

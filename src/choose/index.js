@@ -9,13 +9,21 @@ class Choose extends Component {
     render() {
 
         const type = ['普 通', '困 难', '专 家', '大 师', '折 磨'];
-        const buttons = type.map(function(value){
-           return <div className="choose-btn"><span>{value}</span></div>
-        });
+        const buttons = type.map(function(value,index) {
+           return (
+               <div
+                   key={index}
+                   className="btn"
+                   onClick={this.props.handleChoose.bind(this,index)}
+                   >
+                   <span>{value}</span>
+               </div>
+           )
+        }.bind(this));
 
         return (
             <div className="choose-container">
-                <img src="img/logo.png" className="choose-logo"/>
+                <img src="http://7xlrkz.com1.z0.glb.clouddn.com/logo.png" className="choose-logo"/>
                 <h1 className="choose-title">暗黑3达人测验</h1>
                 {buttons}
             </div>

@@ -24,7 +24,6 @@ html {
   @media (min-device-width : 414px) and (max-device-width : 736px) { font-size: 125px }
 }
 body {
-  margin: 0;
   font-size: .14rem;
   line-height: 1.42857143;
 }
@@ -151,4 +150,28 @@ input[type="search"]::-webkit-search-decoration {
     width: 480px;
     margin: 0 auto;
   }
+}
+
+.btn {
+  cursor: pointer;
+  width: 80%;
+  height: .54rem;
+  text-align: center;
+  margin: 0 auto .15rem;
+  border-radius: 4px;
+  background: {
+    image: url('http://7xlrkz.com1.z0.glb.clouddn.com/button_background.png');
+    size: 100% .54rem;
+  };
+  span {
+    color: $btnTextColor;
+    font-size: .16rem;
+    line-height: .52rem;
+    text-shadow: 0 0 10px rgba(253, 194, 145, .8);
+  }
+}
+.begin-btn {
+  position: absolute;
+  top: 55%;
+  left: 10%;
 }

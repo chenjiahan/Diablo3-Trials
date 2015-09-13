@@ -12,8 +12,8 @@ class App extends Component {
         }
     }
 
-    handleChoose() {
-
+    handleChoose(index) {
+        console.log(index);
     }
 
     render() {
@@ -23,16 +23,30 @@ class App extends Component {
     }
 }
 
+class StartButton extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    start() {
+        React.render(
+            <App />,
+            document.getElementById('app')
+        );
+    }
+
+    render() {
+        return (
+            <div className="btn begin-btn" onClick={this.start}>
+                <span>开 始</span>
+            </div>
+        )
+    }
+}
 
 window.onload = function() {
-
-    let app = document.getElementById('app');
-    let loadingArea = document.getElementsByClassName('loading-info')[0];
-
-    loadingArea.innerHTML = '开始游戏';
-
-    //React.render(
-    //    <App />,
-    //    app
-    //);
+    React.render(
+        <StartButton />,
+        document.getElementsByClassName('loading-container')[0]
+    );
 }
