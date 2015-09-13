@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,maximum-scale=1"/>
     <title>暗黑3达人</title>
+    <link rel="icon" href="http://7xlrkz.com1.z0.glb.clouddn.com/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://7xlrkz.com1.z0.glb.clouddn.com/favicon.ico" type="image/x-icon" />
 
     <style>
         body {
@@ -39,6 +41,18 @@
         <!-- loading end -->
     </div>
 
+    <script>
+        function preLoadImages(arr){
+            var newImages=[];
+            var cdnPrefix = 'http://7xlrkz.com1.z0.glb.clouddn.com/';
+            for (var i = 0, len = arr.length; i < len; i++) {
+                newImages[i] = new Image()
+                newImages[i].src = cdnPrefix + arr[i];
+            }
+        }
+        var imageArr = ['logo.png', 'button_background.png', 'question_background.jpg'];
+        preLoadImages(imageArr);
+    </script>
     <script src="index.js"></script>
 </body>
 </html>
