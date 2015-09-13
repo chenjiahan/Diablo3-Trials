@@ -1,6 +1,6 @@
 @import 'config.scss';
 
-/*--normalize--*/
+//normalize start
 *,
 *:before,
 *:after {
@@ -132,7 +132,9 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+//normalize end
 
+//common class start
 .clearfix:before,
 .clearfix:after {
   content:" ";
@@ -141,18 +143,6 @@ input[type="search"]::-webkit-search-decoration {
 .clearfix:after {
   clear:both;
 }
-
-#app {
-  position: relative;
-  @media ( max-width: 480px ) {
-    width: 100%;
-  }
-  @media ( min-width: 481px) {
-    width: 480px;
-    margin: 0 auto;
-  }
-}
-
 .btn {
   cursor: pointer;
   width: 80%;
@@ -171,8 +161,34 @@ input[type="search"]::-webkit-search-decoration {
     text-shadow: 0 0 10px rgba(253, 194, 145, .8);
   }
 }
-.begin-btn {
-  position: absolute;
-  top: 55%;
-  left: 10%;
+//common class end
+
+//animation start
+@keyframes door-enter {
+  from {
+    transform: scale3d(0, 1, 1);
+    opacity: 0;
+  }
+  to {
+    transform: scale3d(1, 1, .1);
+    opacity: 1;
+  }
 }
+.door-enter {
+  animation: door-enter .2s both ease-in-out;
+}
+
+@keyframes zoom-enter {
+  0% {
+    transform: scale3d(.3, .3, .3);
+    opacity: 0;
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
+.zoom-enter {
+  animation: zoom-enter .3s both cubic-bezier(0.4, 0, 0, 1.5);
+}
+//animation end

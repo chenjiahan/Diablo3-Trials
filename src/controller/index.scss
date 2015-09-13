@@ -1,0 +1,10 @@
+#app {
+  position: relative;
+  @media ( max-width: 480px ) {
+    width: 100%;
+  }
+  @media ( min-width: 481px) {
+    width: 480px;
+    margin: 0 auto;
+  }
+}

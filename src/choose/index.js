@@ -10,15 +10,20 @@ class Choose extends Component {
 
         const type = ['普 通', '困 难', '专 家', '大 师', '折 磨'];
         const buttons = type.map(function(value,index) {
-           return (
+            const delay = {
+                animationDelay: index * 100 + 'ms',
+                WebkitAnimationDelay: index * 100 + 'ms'
+            }
+            return (
                <div
                    key={index}
-                   className="btn"
+                   className="btn zoom-enter"
                    onClick={this.props.handleChoose.bind(this,index)}
+                   style={delay}
                    >
                    <span>{value}</span>
                </div>
-           )
+            )
         }.bind(this));
 
         return (
