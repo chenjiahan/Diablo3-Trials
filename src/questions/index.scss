@@ -1,1 +1,52 @@
 @import '../config';
+
+.q-container {
+  height: 100%;
+  background: $backgroundColor;
+}
+.q-info {
+  position: absolute;
+  width: 100%;
+  top: .1rem;
+  color: $textColor;
+  text-align: center;
+  line-height: .2rem;
+}
+.q-question {
+  position: absolute;
+  height: 40%;
+  width: 90%;
+  top: .4rem;
+  left: 5%;
+  background: {
+    image: url('http://7xlrkz.com1.z0.glb.clouddn.com/question_background.jpg');
+    size: 100% 100%;
+    repeat: no-repeat;
+  };
+}
+.q-toolbar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: .4rem;
+  color: #fff;
+  background: rgba(0, 0, 0, .2);
+}
+.q-prev,
+.q-next,
+.q-submit {
+  display: inline-block;
+  text-align: center;
+  height: .4rem;
+  line-height: .4rem;
+}
+.q-prev,
+.q-next {
+  width: 30%;
+  background: #330C00;
+}
+.q-submit {
+  width: 40%;
+  background: #2E2F30;
+}

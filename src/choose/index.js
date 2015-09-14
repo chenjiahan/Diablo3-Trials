@@ -8,7 +8,7 @@ class Choose extends Component {
 
     render() {
 
-        const type = ['普 通', '困 难', '专 家', '大 师', '折 磨'];
+        const type = ['普 通', '困 难', '大 师', '折 磨'];
         const buttons = type.map(function(value,index) {
             const delay = {
                 animationDelay: index * 100 + 'ms',

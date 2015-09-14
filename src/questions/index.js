@@ -7,15 +7,19 @@ class Questions extends Component {
         super(props);
 
         this.state = {
-            currentQuestion: 1
+            currentQuestion: 1,
+            chosenAnswer: null,
+            answerList: []
         }
     }
 
-    prev() {
-
+    switch() {
+        this.setState({
+            answer: ''
+        });
     }
 
-    next() {
+    chooseAnswer() {
 
     }
 
@@ -25,17 +29,20 @@ class Questions extends Component {
 
     render() {
         return (
-            <div>
+            <div className="q-container">
                 <div className="q-info">
                     <span>第 {this.state.currentQuestion} 题 / 共 10 题</span>
                 </div>
-                <div className="q-">
+                <div className="q-question">
 
                 </div>
-                <div className="q-nav">
-                    <span className="q-prev">上一题</span>
-                    <span className="q-submit">直接提交</span>
-                    <span className="q-next">下一题</span>
+                <div className="q-options">
+
+                </div>
+                <div className="q-toolbar">
+                    <span className="q-prev" onClick={this.switch.bind(this,'prev')}>上一题</span>
+                    <span className="q-submit" onClick={this.submit.bind(this)}>直接提交</span>
+                    <span className="q-next" onClick={this.switch.bind(this)}>下一题</span>
                 </div>
             </div>
         )

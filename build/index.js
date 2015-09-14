@@ -18659,6 +18659,10 @@
 
 	var _questions2 = _interopRequireDefault(_questions);
 
+	var _data = __webpack_require__(173);
+
+	var _data2 = _interopRequireDefault(_data);
+
 	var Controller = (function (_Component) {
 	    _inherits(Controller, _Component);
 
@@ -18676,7 +18680,25 @@
 
 	    _createClass(Controller, [{
 	        key: 'generateQuestions',
-	        value: function generateQuestions(difficulty) {}
+	        value: function generateQuestions(difficulty) {
+	            var questions = _data2['default'][difficulty];
+	            var len = questions.length;
+	            var QUESTION_NUM = 10;
+	            var randomNums = [];
+	            var random = undefined;
+	            var result = [];
+	            while (randomNums.length < QUESTION_NUM) {
+	                do {
+	                    random = Math.floor(Math.random() * len);
+	                } while (randomNums.indexOf(random) !== -1);
+	                randomNums.push(random);
+	            }
+	            for (var i = 0; i < QUESTION_NUM; i++) {
+	                result.push(questions[randomNums[i]]);
+	            }
+	            console.log(result);
+	            return result;
+	        }
 	    }, {
 	        key: 'handleChoose',
 	        value: function handleChoose(difficulty) {
@@ -18787,7 +18809,7 @@
 	        key: 'render',
 	        value: function render() {
 
-	            var type = ['普 通', '困 难', '专 家', '大 师', '折 磨'];
+	            var type = ['普 通', '困 难', '大 师', '折 磨'];
 	            var buttons = type.map((function (value, index) {
 	                var delay = {
 	                    animationDelay: index * 100 + 'ms',
@@ -18904,16 +18926,22 @@
 	        _get(Object.getPrototypeOf(Questions.prototype), 'constructor', this).call(this, props);
 
 	        this.state = {
-	            currentQuestion: 1
+	            currentQuestion: 1,
+	            chosenAnswer: null,
+	            answerList: []
 	        };
 	    }
 
 	    _createClass(Questions, [{
-	        key: 'prev',
-	        value: function prev() {}
+	        key: 'switch',
+	        value: function _switch() {
+	            this.setState({
+	                answer: ''
+	            });
+	        }
 	    }, {
-	        key: 'next',
-	        value: function next() {}
+	        key: 'chooseAnswer',
+	        value: function chooseAnswer() {}
 	    }, {
 	        key: 'submit',
 	        value: function submit() {}
@@ -18922,7 +18950,7 @@
 	        value: function render() {
 	            return _react2['default'].createElement(
 	                'div',
-	                null,
+	                { className: 'q-container' },
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'q-info' },
@@ -18934,23 +18962,24 @@
 	                        ' 题 / 共 10 题'
 	                    )
 	                ),
-	                _react2['default'].createElement('div', { className: 'q-' }),
+	                _react2['default'].createElement('div', { className: 'q-question' }),
+	                _react2['default'].createElement('div', { className: 'q-options' }),
 	                _react2['default'].createElement(
 	                    'div',
-	                    { className: 'q-nav' },
+	                    { className: 'q-toolbar' },
 	                    _react2['default'].createElement(
 	                        'span',
-	                        { className: 'q-prev' },
+	                        { className: 'q-prev', onClick: this['switch'].bind(this, 'prev') },
 	                        '上一题'
 	                    ),
 	                    _react2['default'].createElement(
 	                        'span',
-	                        { className: 'q-submit' },
+	                        { className: 'q-submit', onClick: this.submit.bind(this) },
 	                        '直接提交'
 	                    ),
 	                    _react2['default'].createElement(
 	                        'span',
-	                        { className: 'q-next' },
+	                        { className: 'q-next', onClick: this['switch'].bind(this) },
 	                        '下一题'
 	                    )
 	                )
@@ -18999,10 +19028,96 @@
 
 
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, ".q-container {\n  height: 100%;\n  background: #12110F; }\n\n.q-info {\n  position: absolute;\n  width: 100%;\n  top: .1rem;\n  color: #A99877;\n  text-align: center;\n  line-height: .2rem; }\n\n.q-question {\n  position: absolute;\n  height: 40%;\n  width: 90%;\n  top: .4rem;\n  left: 5%;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/question_background.jpg\");\n  background-size: 100% 100%;\n  background-repeat: no-repeat; }\n\n.q-toolbar {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  height: .4rem;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.2); }\n\n.q-prev,\n.q-next,\n.q-submit {\n  display: inline-block;\n  text-align: center;\n  height: .4rem;\n  line-height: .4rem; }\n\n.q-prev,\n.q-next {\n  width: 30%;\n  background: #330C00; }\n\n.q-submit {\n  width: 40%;\n  background: #2E2F30; }\n", ""]);
 
 	// exports
 
+
+/***/ },
+/* 173 */
+/***/ function(module, exports) {
+
+	//普通
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+	var normal = [{
+	    question: '《暗黑破坏神Ⅲ》是由下列哪个公司开发的?',
+	    options: ['暴雪娱乐', '网易', '腾讯', '索尼']
+	}, {
+	    question: '《夺魂之镰》中的新职业是?',
+	    options: ['圣教军', '猎魔人', '武僧', '德鲁伊']
+	}, {
+	    question: '"圣光啊,你有看到那个敌人吗?"是谁的台词?',
+	    options: ['圣堂骑士寇马可', '盗贼林登', '魔女爱莲娜']
+	}, {
+	    question: '下列套装中,只有在在折磨以上难度才能掉落的是?',
+	    options: ['圣光追寻者', '唤魔师的荆棘', '神龙之魂', '神圣护卫']
+	}, {
+	    question: '下列套装中,只有在在折磨以上难度才能掉落的是?',
+	    options: ['暗影装束', '马纳祖玛之道', '恶魔之皮', '黑棘的战铠']
+	}, {
+	    question: '对圣教军玩家来说,下列腰带中掉率最低的是?',
+	    options: ['行巫时刻', '宝藏腰带', '雷神之力', '万象皆杀']
+	}, {
+	    question: '下列装备中最萌的是?',
+	    options: ['亨利的永恒追捕', '塔·拉夏的坚定目光', '艾伯力·卡罗', '骄矜必败']
+	}, {
+	    question: '下列技能不能免疫控制的是?',
+	    options: ['战吼', '烟雾弹', '御法者', '灵光悟']
+	}, {
+	    question: '谎言之王是?',
+	    options: ['比列', '阿兹莫丹', '迪亚波罗', '沈老贪']
+	}, {
+	    question: '下列哪件装备只能从赫拉迪姆宝匣中获取?',
+	    options: ['皇家华戒', '地狱火戒指', '乔丹之石', '李奥瑞克的玺戒']
+	}, {
+	    question: '"再来一次,女儿"是谁的台词?',
+	    options: ['爱德莉亚', '凯恩', '海德格', '林登']
+	}];
+
+	//困难
+	var hard = [{
+	    question: '"我见过更好的"是谁的台词?',
+	    options: ['卡达拉', '皮诺·马雷拉', '', '']
+	}, {
+	    question: '"啊，海德格，救我~"是谁的台词?',
+	    options: ['海德格的老婆', '海德格的徒弟', '莉亚', '奈非天']
+	}, {
+	    question: '下列哪件装备只能从赫拉迪姆宝匣中获取?',
+	    options: ['贪婪腰带', '迅击腰带', '藏红裹腰', '宝藏腰带']
+	}, {
+	    question: '"虽然我个子小，但是如果你想偷我的东西，我一定会让你好看。"是谁的台词?',
+	    options: ['小贩阿扭', '', '', '']
+	}];
+
+	//大师
+	var master = [{
+	    question: '"我也当过冒险者,但那不合我的胃口,痛苦太多,收获太少。"是谁的台词?',
+	    options: ['', '', '', '']
+	}, {
+	    question: '"兄弟们，至死方休！"是谁的台词?',
+	    options: ['海利队长', '', '', '']
+	}, {
+	    question: '"佩什科夫之眼"的特效是?',
+	    options: ['使回天息的冷却时间缩短。', '对敌人造成伤害时有一定几率使你的技能不消耗内力。', '使用眩目闪恢复一定内力。', '金轮阵使每秒恢复的内力提高 。']
+	}];
+
+	//折磨
+	var torment = [{
+	    question: '"你这个自以为是的涅法雷姆"是谁的台词?',
+	    options: ['阿兹莫丹', '迪亚波罗', '李奥瑞克', '比列']
+	}, {
+	    question: '暗黑3的首任游戏总监是?',
+	    options: ['Jay Wilson', 'Josh Mosquiera', 'Brian Kindregan', 'Blood Face']
+	}];
+
+	var data = [normal, hard, master, torment];
+
+	exports['default'] = data;
+	module.exports = exports['default'];
 
 /***/ }
 /******/ ]);

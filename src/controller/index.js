@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './index.scss';
 import Choose from '../choose';
 import Questions from '../questions';
+import data from './data';
 
 class Controller extends Component {
     constructor(props) {
@@ -15,7 +16,23 @@ class Controller extends Component {
     }
 
     generateQuestions(difficulty) {
-
+        const questions = data[difficulty];
+        const len = questions.length;
+        const QUESTION_NUM = 10;
+        let randomNums = [];
+        let random;
+        let result = [];
+        while(randomNums.length < QUESTION_NUM) {
+            do {
+                random = Math.floor(Math.random() * len);
+            } while(randomNums.indexOf(random) !== -1)
+            randomNums.push(random);
+        }
+        for(let i = 0; i < QUESTION_NUM; i++) {
+            result.push(questions[randomNums[i]]);
+        }
+        console.log(result);
+        return result;
     }
 
     handleChoose(difficulty) {
