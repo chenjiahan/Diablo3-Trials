@@ -18655,6 +18655,10 @@
 
 	var _choose2 = _interopRequireDefault(_choose);
 
+	var _questions = __webpack_require__(170);
+
+	var _questions2 = _interopRequireDefault(_questions);
+
 	var Controller = (function (_Component) {
 	    _inherits(Controller, _Component);
 
@@ -18664,20 +18668,37 @@
 	        _get(Object.getPrototypeOf(Controller.prototype), 'constructor', this).call(this, props);
 
 	        this.state = {
-	            showChoose: true,
-	            showQuestions: false
+	            show: 'choose',
+	            difficulty: 0,
+	            questions: []
 	        };
 	    }
 
 	    _createClass(Controller, [{
+	        key: 'generateQuestions',
+	        value: function generateQuestions(difficulty) {}
+	    }, {
 	        key: 'handleChoose',
-	        value: function handleChoose(index) {
-	            console.log(index);
+	        value: function handleChoose(difficulty) {
+	            var questions = this.generateQuestions(difficulty);
+	            this.setState({
+	                questions: questions,
+	                difficulty: difficulty,
+	                show: 'questions'
+	            });
 	        }
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            return _react2['default'].createElement(_choose2['default'], { handleChoose: this.handleChoose });
+	            switch (this.state.show) {
+	                case 'choose':
+	                    return _react2['default'].createElement(_choose2['default'], { handleChoose: this.handleChoose.bind(this) });
+	                case 'questions':
+	                    return _react2['default'].createElement(_questions2['default'], {
+	                        questions: this.state.questions,
+	                        diffculty: this.state.difficulty
+	                    });
+	            }
 	        }
 	    }]);
 
@@ -18844,6 +18865,141 @@
 
 	// module
 	exports.push([module.id, ".choose-container {\n  height: 100%;\n  overflow: hidden;\n  background: #12110F; }\n\n.choose-title {\n  color: #FDC291;\n  text-align: center;\n  margin: 0.9rem 0 0.3rem;\n  text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n\n.choose-logo {\n  position: absolute;\n  width: 1.2rem; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 170 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(171);
+
+	var Questions = (function (_Component) {
+	    _inherits(Questions, _Component);
+
+	    function Questions(props) {
+	        _classCallCheck(this, Questions);
+
+	        _get(Object.getPrototypeOf(Questions.prototype), 'constructor', this).call(this, props);
+
+	        this.state = {
+	            currentQuestion: 1
+	        };
+	    }
+
+	    _createClass(Questions, [{
+	        key: 'prev',
+	        value: function prev() {}
+	    }, {
+	        key: 'next',
+	        value: function next() {}
+	    }, {
+	        key: 'submit',
+	        value: function submit() {}
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2['default'].createElement(
+	                'div',
+	                null,
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'q-info' },
+	                    _react2['default'].createElement(
+	                        'span',
+	                        null,
+	                        '第 ',
+	                        this.state.currentQuestion,
+	                        ' 题 / 共 10 题'
+	                    )
+	                ),
+	                _react2['default'].createElement('div', { className: 'q-' }),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'q-nav' },
+	                    _react2['default'].createElement(
+	                        'span',
+	                        { className: 'q-prev' },
+	                        '上一题'
+	                    ),
+	                    _react2['default'].createElement(
+	                        'span',
+	                        { className: 'q-submit' },
+	                        '直接提交'
+	                    ),
+	                    _react2['default'].createElement(
+	                        'span',
+	                        { className: 'q-next' },
+	                        '下一题'
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Questions;
+	})(_react.Component);
+
+	exports['default'] = Questions;
+	module.exports = exports['default'];
+
+/***/ },
+/* 171 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(172);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(160)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./index.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./index.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 172 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(159)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "", ""]);
 
 	// exports
 
