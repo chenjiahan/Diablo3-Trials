@@ -7,22 +7,32 @@
 .q-info {
   position: absolute;
   width: 100%;
-  top: .1rem;
+  top: .2rem;
   color: $textColor;
   text-align: center;
   line-height: .2rem;
 }
 .q-question {
   position: absolute;
-  height: 40%;
+  height: 20%;
   width: 90%;
-  top: .4rem;
+  top: .6rem;
   left: 5%;
+  padding: .2rem .3rem;
   background: {
     image: url('http://7xlrkz.com1.z0.glb.clouddn.com/question_background.jpg');
     size: 100% 100%;
     repeat: no-repeat;
   };
+  span {
+    color: #35110f;
+    font-size: .18rem;
+  }
+}
+.q-options {
+  position: absolute;
+  width: 100%;
+  top: 35%;
 }
 .q-toolbar {
   position: fixed;
@@ -32,21 +42,4 @@
   height: .4rem;
   color: #fff;
   background: rgba(0, 0, 0, .2);
-}
-.q-prev,
-.q-next,
-.q-submit {
-  display: inline-block;
-  text-align: center;
-  height: .4rem;
-  line-height: .4rem;
-}
-.q-prev,
-.q-next {
-  width: 30%;
-  background: #330C00;
-}
-.q-submit {
-  width: 40%;
-  background: #2E2F30;
 }

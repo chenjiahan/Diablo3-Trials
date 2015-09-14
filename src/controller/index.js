@@ -11,34 +11,57 @@ class Controller extends Component {
         this.state = {
             show: 'choose',
             difficulty: 0,
-            questions: []
+            questions: [],
+            correctAnswer: []
         }
+    }
+
+    getRandom(max) {
+        return Math.floor(Math.random() * max);
     }
 
     generateQuestions(difficulty) {
         const questions = data[difficulty];
         const len = questions.length;
         const QUESTION_NUM = 10;
-        let randomNums = [];
+
+        //随机选择10道题目
+        let randomNumbers = [];
         let random;
         let result = [];
-        while(randomNums.length < QUESTION_NUM) {
+        while(randomNumbers.length < QUESTION_NUM) {
             do {
-                random = Math.floor(Math.random() * len);
-            } while(randomNums.indexOf(random) !== -1)
-            randomNums.push(random);
+                random = this.getRandom(len);
+            } while (randomNumbers.indexOf(random) !== -1);
+            randomNumbers.push(random);
         }
         for(let i = 0; i < QUESTION_NUM; i++) {
-            result.push(questions[randomNums[i]]);
+            result.push(questions[randomNumbers[i]]);
         }
-        console.log(result);
-        return result;
+
+        //打乱选项并保存正确选项
+        let correctAnswer = [];
+        let options;
+        let temp;
+        for(let i = 0; i < QUESTION_NUM; i++) {
+            options = result[i].options;
+            random = this.getRandom(options.length);
+            correctAnswer.push(random);
+
+            //switch
+            temp = options[random];
+            options[random] = options[0];
+            options[0] = temp;
+        }
+        this.setState({
+            questions,
+            correctAnswer
+        });
     }
 
     handleChoose(difficulty) {
-        const questions = this.generateQuestions(difficulty);
+        this.generateQuestions(difficulty);
         this.setState({
-            questions,
             difficulty,
             show: 'questions'
         });
@@ -49,14 +72,15 @@ class Controller extends Component {
             case 'choose':
                 return (
                     <Choose handleChoose={this.handleChoose.bind(this)} />
-                )
+                );
             case 'questions':
                 return (
                     <Questions
                         questions={this.state.questions}
                         diffculty={this.state.difficulty}
+                        correctAnswer={this.state.correctAnswer}
                         />
-                )
+                );
         }
     }
 }

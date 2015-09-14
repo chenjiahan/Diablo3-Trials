@@ -7,42 +7,60 @@ class Questions extends Component {
         super(props);
 
         this.state = {
-            currentQuestion: 1,
-            chosenAnswer: null,
+            currentQuestion: 0,
             answerList: []
         }
     }
 
-    switch() {
-        this.setState({
-            answer: ''
-        });
-    }
-
-    chooseAnswer() {
-
+    nextQuestion(index) {
+        const current = this.state.currentQuestion;
+        this.state.answerList[current] = index;
+        if(current < 9) {
+            this.setState({
+                currentQuestion: current + 1
+            });
+        } else {
+            console.log(this.state.answerList);
+            this.submit();
+        }
     }
 
     submit() {
-
+        console.log(this.state.answerList);
+        console.log(this.props.correctAnswer);
     }
 
     render() {
+        const current = this.state.currentQuestion;
+        const questions = this.props.questions[current];
+
+        const options = questions.options.map(function(value, index) {
+            const delay = {
+                animationDelay: index * 100 + 'ms',
+                WebkitAnimationDelay: index * 100 + 'ms'
+            };
+            return (
+                <div
+                    key={index}
+                    className="btn zoom-enter"
+                    onClick={this.nextQuestion.bind(this, index)}
+                    style={delay}
+                    >
+                    <span>{value}</span>
+                </div>
+            )
+        }.bind(this));
+
         return (
             <div className="q-container">
                 <div className="q-info">
-                    <span>第 {this.state.currentQuestion} 题 / 共 10 题</span>
+                    <span>第 {current + 1} 题 / 共 10 题</span>
                 </div>
                 <div className="q-question">
-
+                    <span>{questions.question}</span>
                 </div>
                 <div className="q-options">
-
-                </div>
-                <div className="q-toolbar">
-                    <span className="q-prev" onClick={this.switch.bind(this,'prev')}>上一题</span>
-                    <span className="q-submit" onClick={this.submit.bind(this)}>直接提交</span>
-                    <span className="q-next" onClick={this.switch.bind(this)}>下一题</span>
+                    {options}
                 </div>
             </div>
         )

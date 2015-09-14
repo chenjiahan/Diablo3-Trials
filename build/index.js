@@ -18674,37 +18674,61 @@
 	        this.state = {
 	            show: 'choose',
 	            difficulty: 0,
-	            questions: []
+	            questions: [],
+	            correctAnswer: []
 	        };
 	    }
 
 	    _createClass(Controller, [{
+	        key: 'getRandom',
+	        value: function getRandom(max) {
+	            return Math.floor(Math.random() * max);
+	        }
+	    }, {
 	        key: 'generateQuestions',
 	        value: function generateQuestions(difficulty) {
 	            var questions = _data2['default'][difficulty];
 	            var len = questions.length;
 	            var QUESTION_NUM = 10;
-	            var randomNums = [];
+
+	            //随机选择10道题目
+	            var randomNumbers = [];
 	            var random = undefined;
 	            var result = [];
-	            while (randomNums.length < QUESTION_NUM) {
+	            while (randomNumbers.length < QUESTION_NUM) {
 	                do {
-	                    random = Math.floor(Math.random() * len);
-	                } while (randomNums.indexOf(random) !== -1);
-	                randomNums.push(random);
+	                    random = this.getRandom(len);
+	                } while (randomNumbers.indexOf(random) !== -1);
+	                randomNumbers.push(random);
 	            }
 	            for (var i = 0; i < QUESTION_NUM; i++) {
-	                result.push(questions[randomNums[i]]);
+	                result.push(questions[randomNumbers[i]]);
 	            }
-	            console.log(result);
-	            return result;
+
+	            //打乱选项并保存正确选项
+	            var correctAnswer = [];
+	            var options = undefined;
+	            var temp = undefined;
+	            for (var i = 0; i < QUESTION_NUM; i++) {
+	                options = result[i].options;
+	                random = this.getRandom(options.length);
+	                correctAnswer.push(random);
+
+	                //switch
+	                temp = options[random];
+	                options[random] = options[0];
+	                options[0] = temp;
+	            }
+	            this.setState({
+	                questions: questions,
+	                correctAnswer: correctAnswer
+	            });
 	        }
 	    }, {
 	        key: 'handleChoose',
 	        value: function handleChoose(difficulty) {
-	            var questions = this.generateQuestions(difficulty);
+	            this.generateQuestions(difficulty);
 	            this.setState({
-	                questions: questions,
 	                difficulty: difficulty,
 	                show: 'questions'
 	            });
@@ -18718,7 +18742,8 @@
 	                case 'questions':
 	                    return _react2['default'].createElement(_questions2['default'], {
 	                        questions: this.state.questions,
-	                        diffculty: this.state.difficulty
+	                        diffculty: this.state.difficulty,
+	                        correctAnswer: this.state.correctAnswer
 	                    });
 	            }
 	        }
@@ -18926,28 +18951,58 @@
 	        _get(Object.getPrototypeOf(Questions.prototype), 'constructor', this).call(this, props);
 
 	        this.state = {
-	            currentQuestion: 1,
-	            chosenAnswer: null,
+	            currentQuestion: 0,
 	            answerList: []
 	        };
 	    }
 
 	    _createClass(Questions, [{
-	        key: 'switch',
-	        value: function _switch() {
-	            this.setState({
-	                answer: ''
-	            });
+	        key: 'nextQuestion',
+	        value: function nextQuestion(index) {
+	            var current = this.state.currentQuestion;
+	            this.state.answerList[current] = index;
+	            if (current < 9) {
+	                this.setState({
+	                    currentQuestion: current + 1
+	                });
+	            } else {
+	                console.log(this.state.answerList);
+	                this.submit();
+	            }
 	        }
 	    }, {
-	        key: 'chooseAnswer',
-	        value: function chooseAnswer() {}
-	    }, {
 	        key: 'submit',
-	        value: function submit() {}
+	        value: function submit() {
+	            console.log(this.state.answerList);
+	            console.log(this.props.correctAnswer);
+	        }
 	    }, {
 	        key: 'render',
 	        value: function render() {
+	            var current = this.state.currentQuestion;
+	            var questions = this.props.questions[current];
+
+	            var options = questions.options.map((function (value, index) {
+	                var delay = {
+	                    animationDelay: index * 100 + 'ms',
+	                    WebkitAnimationDelay: index * 100 + 'ms'
+	                };
+	                return _react2['default'].createElement(
+	                    'div',
+	                    {
+	                        key: index,
+	                        className: 'btn zoom-enter',
+	                        onClick: this.nextQuestion.bind(this, index),
+	                        style: delay
+	                    },
+	                    _react2['default'].createElement(
+	                        'span',
+	                        null,
+	                        value
+	                    )
+	                );
+	            }).bind(this));
+
 	            return _react2['default'].createElement(
 	                'div',
 	                { className: 'q-container' },
@@ -18958,30 +19013,23 @@
 	                        'span',
 	                        null,
 	                        '第 ',
-	                        this.state.currentQuestion,
+	                        current + 1,
 	                        ' 题 / 共 10 题'
 	                    )
 	                ),
-	                _react2['default'].createElement('div', { className: 'q-question' }),
-	                _react2['default'].createElement('div', { className: 'q-options' }),
 	                _react2['default'].createElement(
 	                    'div',
-	                    { className: 'q-toolbar' },
+	                    { className: 'q-question' },
 	                    _react2['default'].createElement(
 	                        'span',
-	                        { className: 'q-prev', onClick: this['switch'].bind(this, 'prev') },
-	                        '上一题'
-	                    ),
-	                    _react2['default'].createElement(
-	                        'span',
-	                        { className: 'q-submit', onClick: this.submit.bind(this) },
-	                        '直接提交'
-	                    ),
-	                    _react2['default'].createElement(
-	                        'span',
-	                        { className: 'q-next', onClick: this['switch'].bind(this) },
-	                        '下一题'
+	                        null,
+	                        questions.question
 	                    )
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'q-options' },
+	                    options
 	                )
 	            );
 	        }
@@ -19028,7 +19076,7 @@
 
 
 	// module
-	exports.push([module.id, ".q-container {\n  height: 100%;\n  background: #12110F; }\n\n.q-info {\n  position: absolute;\n  width: 100%;\n  top: .1rem;\n  color: #A99877;\n  text-align: center;\n  line-height: .2rem; }\n\n.q-question {\n  position: absolute;\n  height: 40%;\n  width: 90%;\n  top: .4rem;\n  left: 5%;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/question_background.jpg\");\n  background-size: 100% 100%;\n  background-repeat: no-repeat; }\n\n.q-toolbar {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  height: .4rem;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.2); }\n\n.q-prev,\n.q-next,\n.q-submit {\n  display: inline-block;\n  text-align: center;\n  height: .4rem;\n  line-height: .4rem; }\n\n.q-prev,\n.q-next {\n  width: 30%;\n  background: #330C00; }\n\n.q-submit {\n  width: 40%;\n  background: #2E2F30; }\n", ""]);
+	exports.push([module.id, ".q-container {\n  height: 100%;\n  background: #12110F; }\n\n.q-info {\n  position: absolute;\n  width: 100%;\n  top: .2rem;\n  color: #A99877;\n  text-align: center;\n  line-height: .2rem; }\n\n.q-question {\n  position: absolute;\n  height: 20%;\n  width: 90%;\n  top: .6rem;\n  left: 5%;\n  padding: 0.2rem 0.3rem;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/question_background.jpg\");\n  background-size: 100% 100%;\n  background-repeat: no-repeat; }\n  .q-question span {\n    color: #35110f;\n    font-size: .18rem; }\n\n.q-options {\n  position: absolute;\n  width: 100%;\n  top: 35%; }\n\n.q-toolbar {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  height: .4rem;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.2); }\n", ""]);
 
 	// exports
 
@@ -19051,7 +19099,7 @@
 	    options: ['圣教军', '猎魔人', '武僧', '德鲁伊']
 	}, {
 	    question: '"圣光啊,你有看到那个敌人吗?"是谁的台词?',
-	    options: ['圣堂骑士寇马可', '盗贼林登', '魔女爱莲娜']
+	    options: ['圣堂骑士寇马可', '盗贼林登', '魔女爱莲娜', '牧师安度因']
 	}, {
 	    question: '下列套装中,只有在在折磨以上难度才能掉落的是?',
 	    options: ['圣光追寻者', '唤魔师的荆棘', '神龙之魂', '神圣护卫']
@@ -19065,10 +19113,10 @@
 	    question: '下列装备中最萌的是?',
 	    options: ['亨利的永恒追捕', '塔·拉夏的坚定目光', '艾伯力·卡罗', '骄矜必败']
 	}, {
-	    question: '下列技能不能免疫控制的是?',
+	    question: '下列技能中不能免疫控制的是?',
 	    options: ['战吼', '烟雾弹', '御法者', '灵光悟']
 	}, {
-	    question: '谎言之王是?',
+	    question: '谎言之王是哪个Boss?',
 	    options: ['比列', '阿兹莫丹', '迪亚波罗', '沈老贪']
 	}, {
 	    question: '下列哪件装备只能从赫拉迪姆宝匣中获取?',
