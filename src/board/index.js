@@ -10,8 +10,8 @@ class Board extends Component {
         return (
             <Rodal visible={true}>
                 <span>答题结束~</span>
-                <span>你的成绩为{this.props.grade}分</span>
-                <div className="btn">继续挑战</div>
+                <span>你的成绩为<span className="board-grade">{this.props.grade}</span>分</span>
+                <div className="btn" onClick={this.props.restart}><span>继续挑战</span></div>
             </Rodal>
         )
     }

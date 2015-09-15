@@ -19168,13 +19168,21 @@
 	                    'span',
 	                    null,
 	                    '你的成绩为',
-	                    this.props.grade,
+	                    _react2['default'].createElement(
+	                        'span',
+	                        { className: 'board-grade' },
+	                        this.props.grade
+	                    ),
 	                    '分'
 	                ),
 	                _react2['default'].createElement(
 	                    'div',
-	                    { className: 'btn' },
-	                    '继续挑战'
+	                    { className: 'btn', onClick: this.props.restart },
+	                    _react2['default'].createElement(
+	                        'span',
+	                        null,
+	                        '继续挑战'
+	                    )
 	                )
 	            );
 	        }
@@ -19199,6 +19207,12 @@
 	var normal = [{
 	    question: '《暗黑破坏神Ⅲ》是由下列哪个公司开发的?',
 	    options: ['暴雪娱乐', '网易', '腾讯', '索尼']
+	}, {
+	    question: '《暗黑破坏神Ⅲ》国服是由下列哪个公司代理的?',
+	    options: ['网易', '盛大', '腾讯', '凯恩之角']
+	}, {
+	    question: '《暗黑破坏神Ⅲ》全球发售时间是?',
+	    options: ['2012年5月15日', '2015年5月27日', '2015年3月24日', '2014年3月15日']
 	}, {
 	    question: '《夺魂之镰》中的新职业是?',
 	    options: ['圣教军', '猎魔人', '武僧', '德鲁伊']
@@ -19229,12 +19243,21 @@
 	}, {
 	    question: '"再来一次,女儿"是谁的台词?',
 	    options: ['爱德莉亚', '凯恩', '海德格', '林登']
+	}, {
+	    question: '在专家模式中阵亡后,下列数据不能保留的是?',
+	    options: ['包裹', '巅峰等级', '仓库', '血岩碎片']
+	}, {
+	    question: '暗黑3游戏中,下列关卡不存在的是?',
+	    options: ['凯恩之角', '奶牛关', '欢乐谷', '宝藏秘境']
 	}];
 
 	//困难
 	var hard = [{
 	    question: '"我见过更好的"是谁的台词?',
 	    options: ['卡达拉', '皮诺·马雷拉', '', '']
+	}, {
+	    question: '《暗黑破坏神Ⅲ：夺魂之镰》国服正式运营时间是?',
+	    options: ['2015年5月27日', '2012年5月15日', '2015年3月24日', '2014年3月15日']
 	}, {
 	    question: '"啊，海德格，救我~"是谁的台词?',
 	    options: ['海德格的老婆', '海德格的徒弟', '莉亚', '奈非天']
@@ -19244,6 +19267,9 @@
 	}, {
 	    question: '"虽然我个子小，但是如果你想偷我的东西，我一定会让你好看。"是谁的台词?',
 	    options: ['小贩阿扭', '', '', '']
+	}, {
+	    question: '进入欢乐谷可以获得哪项伟业?',
+	    options: ['夺命独角兽之地', '获选之人', '品位出众', '大熊宝殿']
 	}];
 
 	//大师
@@ -19256,6 +19282,12 @@
 	}, {
 	    question: '"佩什科夫之眼"的特效是?',
 	    options: ['使回天息的冷却时间缩短。', '对敌人造成伤害时有一定几率使你的技能不消耗内力。', '使用眩目闪恢复一定内力。', '金轮阵使每秒恢复的内力提高 。']
+	}, {
+	    question: '在开发者地狱中可以获得哪个伟业?',
+	    options: ['海扁阿杰', '夺命独角兽之地', '灵魂收集者', '暗黑霸主']
+	}, {
+	    question: '2.0.6版本时,全球首位达到巅峰800级的玩家是?',
+	    options: ['漫延', 'Alkaizer', 'Gabynator', '난강하다']
 	}];
 
 	//折磨
@@ -19265,6 +19297,12 @@
 	}, {
 	    question: '暗黑3的首任游戏总监是?',
 	    options: ['Jay Wilson', 'Josh Mosquiera', 'Brian Kindregan', 'Blood Face']
+	}, {
+	    question: '下列伟业不能通过购买典藏版获得的是?',
+	    options: ['暗黑霸主', '灵魂收集者', '大熊宝殿', '天谴女皇']
+	}, {
+	    question: '1.0.4版本时,全球首位达到巅峰100级的玩家是?',
+	    options: ['Alkaizer', '漫延', 'Gabynator', '春日の山']
 	}];
 
 	var data = [normal, hard, master, torment];
