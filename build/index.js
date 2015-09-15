@@ -18235,7 +18235,7 @@
 
 
 	// module
-	exports.push([module.id, "*,\n*:before,\n*:after {\n  box-sizing: border-box; }\n\nhtml {\n  font-size: 80px;\n  -webkit-text-size-adjust: 100%;\n      -ms-text-size-adjust: 100%;\n          text-size-adjust: 100%;\n  font-family: Arial, \"Microsoft Yahei\", Helvetica, sans-serif; }\n  @media (min-device-width: 330px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 360px) {\n    html {\n      font-size: 95px; } }\n  @media (min-device-width: 400px) {\n    html {\n      font-size: 110px; } }\n  @media (max-device-width: 321px) and (min-device-height: 500px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 375px) and (max-device-width: 667px) {\n    html {\n      font-size: 115px; } }\n  @media (min-device-width: 414px) and (max-device-width: 736px) {\n    html {\n      font-size: 125px; } }\n\nbody {\n  font-size: .14rem;\n  line-height: 1.42857143; }\n\nfooter,\nheader,\nnav,\nsection {\n  display: block; }\n\na {\n  text-decoration: none;\n  background-color: transparent; }\n\na:hover {\n  outline: 0;\n  text-decoration: none; }\n\na:focus {\n  outline: none;\n  text-decoration: none; }\n\na:active {\n  outline: 0; }\n\np {\n  margin: 0 0 10px 0; }\n\nb,\nstrong {\n  font-weight: bold; }\n\ndfn {\n  font-style: italic; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-weight: normal; }\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n\nimg {\n  border: 0; }\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  font: inherit;\n  margin: 0; }\n\nbutton {\n  overflow: visible; }\n\nbutton:focus {\n  outline: none !important; }\n\nbutton,\nselect {\n  text-transform: none; }\n\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer; }\n\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\nbutton,\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  border: none; }\n\ninput[type=\"submit\"]:focus {\n  outline: none; }\n\ninput {\n  line-height: normal; }\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0; }\n\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  box-sizing: content-box; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n.clearfix:before,\n.clearfix:after {\n  content: \" \";\n  display: table; }\n\n.clearfix:after {\n  clear: both; }\n\n.btn {\n  cursor: pointer;\n  width: 80%;\n  height: .54rem;\n  text-align: center;\n  border-radius: 4px;\n  margin: 0 auto 0.15rem;\n  -webkit-tap-highlight-color: transparent;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/button_background.png\");\n  background-size: 100% 200%;\n  background-position: 0 0; }\n  .btn span {\n    color: #FDC291;\n    font-size: .16rem;\n    line-height: .52rem;\n    text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n  .btn:focus,\n  .btn:active {\n    outline: none;\n    background-position: 0 -100%; }\n\n@-webkit-keyframes door-enter {\n  from {\n    -webkit-transform: scale3d(0, 1, 1);\n            transform: scale3d(0, 1, 1);\n    opacity: 0; }\n  to {\n    -webkit-transform: scale3d(1, 1, 0.1);\n            transform: scale3d(1, 1, 0.1);\n    opacity: 1; } }\n\n@keyframes door-enter {\n  from {\n    -webkit-transform: scale3d(0, 1, 1);\n            transform: scale3d(0, 1, 1);\n    opacity: 0; }\n  to {\n    -webkit-transform: scale3d(1, 1, 0.1);\n            transform: scale3d(1, 1, 0.1);\n    opacity: 1; } }\n\n.door-enter {\n  -webkit-animation: door-enter 0.2s both ease-in-out;\n          animation: door-enter 0.2s both ease-in-out; }\n\n@-webkit-keyframes zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n    opacity: 0; }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n@keyframes zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n    opacity: 0; }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n.zoom-enter {\n  -webkit-animation: zoom-enter 0.3s both cubic-bezier(0.4, 0, 0, 1.5);\n          animation: zoom-enter 0.3s both cubic-bezier(0.4, 0, 0, 1.5); }\n", ""]);
+	exports.push([module.id, "*,\n*:before,\n*:after {\n  box-sizing: border-box; }\n\nhtml {\n  font-size: 80px;\n  -webkit-text-size-adjust: 100%;\n      -ms-text-size-adjust: 100%;\n          text-size-adjust: 100%;\n  font-family: Arial, \"Microsoft Yahei\", Helvetica, sans-serif; }\n  @media (min-device-width: 330px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 360px) {\n    html {\n      font-size: 95px; } }\n  @media (min-device-width: 400px) {\n    html {\n      font-size: 110px; } }\n  @media (max-device-width: 321px) and (min-device-height: 500px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 375px) and (max-device-width: 667px) {\n    html {\n      font-size: 115px; } }\n  @media (min-device-width: 414px) and (max-device-width: 736px) {\n    html {\n      font-size: 125px; } }\n\nbody {\n  font-size: .14rem;\n  line-height: 1.42857143; }\n\nfooter,\nheader,\nnav,\nsection {\n  display: block; }\n\na {\n  text-decoration: none;\n  background-color: transparent; }\n\na:hover {\n  outline: 0;\n  text-decoration: none; }\n\na:focus {\n  outline: none;\n  text-decoration: none; }\n\na:active {\n  outline: 0; }\n\np {\n  margin: 0 0 10px 0; }\n\nb,\nstrong {\n  font-weight: bold; }\n\ndfn {\n  font-style: italic; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-weight: normal; }\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n\nimg {\n  border: 0; }\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  font: inherit;\n  margin: 0; }\n\nbutton {\n  overflow: visible; }\n\nbutton:focus {\n  outline: none !important; }\n\nbutton,\nselect {\n  text-transform: none; }\n\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer; }\n\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\nbutton,\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  border: none; }\n\ninput[type=\"submit\"]:focus {\n  outline: none; }\n\ninput {\n  line-height: normal; }\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0; }\n\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  box-sizing: content-box; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n.clearfix:before,\n.clearfix:after {\n  content: \" \";\n  display: table; }\n\n.clearfix:after {\n  clear: both; }\n\n.btn {\n  cursor: pointer;\n  width: 80%;\n  height: .54rem;\n  text-align: center;\n  border-radius: 4px;\n  margin: 0 auto 0.15rem;\n  -webkit-tap-highlight-color: transparent;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/button_background.png\");\n  background-size: 100% 200%;\n  background-position: 0 0; }\n  .btn span {\n    color: #FDC291;\n    font-size: .16rem;\n    line-height: .52rem;\n    text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n  .btn:focus,\n  .btn:active {\n    outline: none;\n    background-position: 0 -100%; }\n\n@-webkit-keyframes door-enter {\n  from {\n    -webkit-transform: scale3d(0, 1, 1);\n            transform: scale3d(0, 1, 1);\n    opacity: 0; }\n  to {\n    -webkit-transform: scale3d(1, 1, 0.1);\n            transform: scale3d(1, 1, 0.1);\n    opacity: 1; } }\n\n@keyframes door-enter {\n  from {\n    -webkit-transform: scale3d(0, 1, 1);\n            transform: scale3d(0, 1, 1);\n    opacity: 0; }\n  to {\n    -webkit-transform: scale3d(1, 1, 0.1);\n            transform: scale3d(1, 1, 0.1);\n    opacity: 1; } }\n\n.door-enter {\n  -webkit-animation: door-enter 0.2s both ease-in-out;\n          animation: door-enter 0.2s both ease-in-out; }\n\n@-webkit-keyframes zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n    opacity: 0; }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n@keyframes zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n    opacity: 0; }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n.zoom-enter {\n  -webkit-animation: zoom-enter 0.3s both cubic-bezier(0.4, 0, 0, 1.5);\n          animation: zoom-enter 0.3s both cubic-bezier(0.4, 0, 0, 1.5); }\n\n#app {\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/main_background.jpg\");\n  background-size: cover; }\n", ""]);
 
 	// exports
 
@@ -18620,7 +18620,7 @@
 
 
 	// module
-	exports.push([module.id, ".start-btn {\n  position: absolute;\n  top: 55%;\n  left: 10%; }\n", ""]);
+	exports.push([module.id, ".start-btn {\n  position: absolute;\n  top: 58%;\n  left: 10%; }\n", ""]);
 
 	// exports
 
@@ -18659,7 +18659,11 @@
 
 	var _questions2 = _interopRequireDefault(_questions);
 
-	var _data = __webpack_require__(173);
+	var _board = __webpack_require__(173);
+
+	var _board2 = _interopRequireDefault(_board);
+
+	var _data = __webpack_require__(174);
 
 	var _data2 = _interopRequireDefault(_data);
 
@@ -18672,6 +18676,7 @@
 	        _get(Object.getPrototypeOf(Controller.prototype), 'constructor', this).call(this, props);
 
 	        this.state = {
+	            grade: 0,
 	            show: 'choose',
 	            difficulty: 0,
 	            questions: [],
@@ -18734,6 +18739,21 @@
 	            });
 	        }
 	    }, {
+	        key: 'showGradeBoard',
+	        value: function showGradeBoard(grade) {
+	            this.setState({
+	                show: 'board',
+	                grade: grade
+	            });
+	        }
+	    }, {
+	        key: 'restart',
+	        value: function restart() {
+	            this.setState({
+	                show: 'choose'
+	            });
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            switch (this.state.show) {
@@ -18743,7 +18763,12 @@
 	                    return _react2['default'].createElement(_questions2['default'], {
 	                        questions: this.state.questions,
 	                        diffculty: this.state.difficulty,
-	                        correctAnswer: this.state.correctAnswer
+	                        correctAnswer: this.state.correctAnswer,
+	                        showGradeBoard: this.showGradeBoard.bind(this)
+	                    });
+	                case 'board':
+	                    return _react2['default'].createElement(_board2['default'], { grade: this.state.grade,
+	                        restart: this.restart.bind(this)
 	                    });
 	            }
 	        }
@@ -18863,9 +18888,13 @@
 	                _react2['default'].createElement(
 	                    'h1',
 	                    { className: 'choose-title' },
-	                    '暗黑3达人测验'
+	                    '选择测验难度'
 	                ),
-	                buttons
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'choose-btn-group' },
+	                    buttons
+	                )
 	            );
 	        }
 	    }]);
@@ -18911,7 +18940,7 @@
 
 
 	// module
-	exports.push([module.id, ".choose-container {\n  height: 100%;\n  overflow: hidden;\n  background: #12110F; }\n\n.choose-title {\n  color: #FDC291;\n  text-align: center;\n  margin: 0.9rem 0 0.3rem;\n  text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n\n.choose-logo {\n  position: absolute;\n  width: 1.2rem; }\n", ""]);
+	exports.push([module.id, ".choose-container {\n  height: 100%;\n  overflow: hidden;\n  background: rgba(18, 17, 15, 0.7); }\n\n.choose-title {\n  position: absolute;\n  top: 16%;\n  width: 100%;\n  color: #FDC291;\n  text-align: center;\n  text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n\n.choose-logo {\n  position: absolute;\n  top: 2%;\n  height: 13%;\n  width: auto; }\n\n.choose-btn-group {\n  position: absolute;\n  top: 33%;\n  width: 100%; }\n", ""]);
 
 	// exports
 
@@ -18966,12 +18995,12 @@
 	                    currentQuestion: current + 1
 	                });
 	            } else {
-	                this.submit();
+	                this.endAnswer();
 	            }
 	        }
 	    }, {
-	        key: 'submit',
-	        value: function submit() {
+	        key: 'endAnswer',
+	        value: function endAnswer() {
 	            var answerList = this.state.answerList;
 	            var correctAnswer = this.props.correctAnswer;
 	            var grade = 0;
@@ -18980,7 +19009,7 @@
 	                    grade += 10;
 	                }
 	            }
-	            console.log(grade);
+	            this.props.showGradeBoard(grade);
 	        }
 	    }, {
 	        key: 'render',
@@ -19082,13 +19111,83 @@
 
 
 	// module
-	exports.push([module.id, ".q-container {\n  height: 100%;\n  background: #12110F; }\n\n.q-info {\n  position: absolute;\n  width: 100%;\n  top: .2rem;\n  color: #A99877;\n  text-align: center;\n  line-height: .2rem; }\n\n.q-question {\n  position: absolute;\n  height: 20%;\n  width: 90%;\n  top: .6rem;\n  left: 5%;\n  padding: 0.2rem 0.3rem;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/question_background.jpg\");\n  background-size: 100% 100%;\n  background-repeat: no-repeat; }\n  .q-question span {\n    color: #35110f;\n    font-size: .18rem; }\n\n.q-options {\n  position: absolute;\n  width: 100%;\n  top: 35%; }\n\n.q-toolbar {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  height: .4rem;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.2); }\n", ""]);
+	exports.push([module.id, ".q-container {\n  height: 100%;\n  background: rgba(18, 17, 15, 0.7); }\n\n.q-info {\n  position: absolute;\n  width: 100%;\n  top: .2rem;\n  color: #A99877;\n  text-align: center;\n  line-height: .2rem; }\n\n.q-question {\n  position: absolute;\n  height: 22%;\n  width: 90%;\n  top: .6rem;\n  left: 5%;\n  padding: 0.2rem 0.3rem;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/question_background.jpg\");\n  background-size: 100% 100%;\n  background-repeat: no-repeat; }\n  .q-question span {\n    color: #35110f;\n    font-size: .18rem; }\n\n.q-options {\n  position: absolute;\n  width: 100%;\n  top: 38%; }\n\n.q-toolbar {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  height: .4rem;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.2); }\n", ""]);
 
 	// exports
 
 
 /***/ },
 /* 173 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _rodal = __webpack_require__(175);
+
+	var _rodal2 = _interopRequireDefault(_rodal);
+
+	var Board = (function (_Component) {
+	    _inherits(Board, _Component);
+
+	    function Board(props) {
+	        _classCallCheck(this, Board);
+
+	        _get(Object.getPrototypeOf(Board.prototype), 'constructor', this).call(this, props);
+	    }
+
+	    _createClass(Board, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2['default'].createElement(
+	                _rodal2['default'],
+	                { visible: true },
+	                _react2['default'].createElement(
+	                    'span',
+	                    null,
+	                    '答题结束~'
+	                ),
+	                _react2['default'].createElement(
+	                    'span',
+	                    null,
+	                    '你的成绩为',
+	                    this.props.grade,
+	                    '分'
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'btn' },
+	                    '继续挑战'
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Board;
+	})(_react.Component);
+
+	exports['default'] = Board;
+	module.exports = exports['default'];
+
+/***/ },
+/* 174 */
 /***/ function(module, exports) {
 
 	//普通
@@ -19172,6 +19271,302 @@
 
 	exports['default'] = data;
 	module.exports = exports['default'];
+
+/***/ },
+/* 175 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(176);
+
+	var propTypes = {
+	    visible: _react.PropTypes.bool,
+	    duration: _react.PropTypes.number,
+	    showMask: _react.PropTypes.bool,
+	    showCloseButton: _react.PropTypes.bool,
+	    autoClose: _react.PropTypes.number
+	};
+
+	var defaultProps = {
+	    visible: false,
+	    duration: 300,
+	    showMask: true,
+	    showCloseButton: true
+	};
+
+	var EVENT_NAME_MAP = {
+	    transitionend: {
+	        'transition': 'transitionend',
+	        'WebkitTransition': 'webkitTransitionEnd',
+	        'MozTransition': 'mozTransitionEnd',
+	        'OTransition': 'oTransitionEnd',
+	        'msTransition': 'MSTransitionEnd'
+	    },
+
+	    animationend: {
+	        'animation': 'animationend',
+	        'WebkitAnimation': 'webkitAnimationEnd',
+	        'MozAnimation': 'mozAnimationEnd',
+	        'OAnimation': 'oAnimationEnd',
+	        'msAnimation': 'MSAnimationEnd'
+	    }
+	};
+
+	var endEvents = [];
+
+	//detect events
+	(function () {
+	    var testEl = document.createElement('div');
+	    var style = testEl.style;
+
+	    if (!('AnimationEvent' in window)) {
+	        delete EVENT_NAME_MAP.animationend.animation;
+	    }
+
+	    if (!('TransitionEvent' in window)) {
+	        delete EVENT_NAME_MAP.transitionend.transition;
+	    }
+
+	    for (var baseEventName in EVENT_NAME_MAP) {
+	        var baseEvents = EVENT_NAME_MAP[baseEventName];
+	        for (var styleName in baseEvents) {
+	            if (styleName in style) {
+	                endEvents.push(baseEvents[styleName]);
+	                break;
+	            }
+	        }
+	    }
+	})();
+
+	var TransitionEvents = {
+	    addEndEventListener: function addEndEventListener(node, eventListener) {
+	        if (endEvents.length === 0) {
+	            window.setTimeout(eventListener, 0);
+	            return;
+	        }
+	        endEvents.forEach(function (endEvent) {
+	            node.addEventListener(endEvent, eventListener, false);
+	        });
+	    },
+	    removeEndEventListener: function removeEndEventListener(node, eventListener) {
+	        if (endEvents.length === 0) {
+	            return;
+	        }
+	        endEvents.forEach(function (endEvent) {
+	            node.removeEventListener(endEvent, eventListener, false);
+	        });
+	    }
+	};
+
+	var RodalBox = (function (_Component) {
+	    _inherits(RodalBox, _Component);
+
+	    function RodalBox() {
+	        _classCallCheck(this, RodalBox);
+
+	        _get(Object.getPrototypeOf(RodalBox.prototype), 'constructor', this).apply(this, arguments);
+	    }
+
+	    _createClass(RodalBox, [{
+	        key: 'render',
+	        value: function render() {
+
+	            var style = {
+	                animationDuration: this.props.duration + 'ms',
+	                WebkitAnimationDuration: this.props.duration + 'ms'
+	            };
+
+	            var className = 'rodal-box rodal-zoom-' + this.props.animationType;
+
+	            return _react2['default'].createElement(
+	                'div',
+	                { style: style, className: className },
+	                this.props.children
+	            );
+	        }
+	    }]);
+
+	    return RodalBox;
+	})(_react.Component);
+
+	var Rodal = (function (_Component2) {
+	    _inherits(Rodal, _Component2);
+
+	    function Rodal(props) {
+	        _classCallCheck(this, Rodal);
+
+	        _get(Object.getPrototypeOf(Rodal.prototype), 'constructor', this).call(this, props);
+
+	        this.state = {
+	            isShow: this.props.visible,
+	            animationType: this.props.visible ? 'enter' : 'leave'
+	        };
+	    }
+
+	    _createClass(Rodal, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            TransitionEvents.addEndEventListener(_react2['default'].findDOMNode(this), this.transitionEnd.bind(this));
+	        }
+	    }, {
+	        key: 'componentWillUnmount',
+	        value: function componentWillUnmount() {
+	            TransitionEvents.removeEndEventListener(_react2['default'].findDOMNode(this), this.transitionEnd);
+	        }
+	    }, {
+	        key: 'componentWillReceiveProps',
+	        value: function componentWillReceiveProps(nextProps) {
+	            if (!this.props.visible && nextProps.visible) {
+	                this.fadeIn();
+	            } else if (this.props.visible && !nextProps.visible) {
+	                this.fadeOut();
+	            }
+	        }
+	    }, {
+	        key: 'fadeIn',
+	        value: function fadeIn() {
+	            this.setState({
+	                isShow: true,
+	                animationType: 'enter'
+	            });
+	        }
+	    }, {
+	        key: 'fadeOut',
+	        value: function fadeOut() {
+	            this.setState({
+	                animationType: 'leave'
+	            });
+
+	            //IE9
+	            if (endEvents.length === 0) {
+	                this.setState({
+	                    isShow: false
+	                });
+	            }
+	        }
+	    }, {
+	        key: 'transitionEnd',
+	        value: function transitionEnd(e) {
+	            var node = _react2['default'].findDOMNode(this);
+	            if (e && e.target !== node) {
+	                return;
+	            }
+	            if (this.state.animationType === 'leave') {
+	                this.setState({
+	                    isShow: false
+	                });
+	            }
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+
+	            var style = {
+	                display: this.state.isShow ? 'block' : 'none',
+	                animationDuration: this.props.duration + 'ms',
+	                WebkitAnimationDuration: this.props.duration + 'ms'
+	            };
+
+	            var Mask = this.props.showMask ? _react2['default'].createElement('div', { className: 'rodal-mask', onClick: this.props.onClose }) : null;
+
+	            var animationType = this.state.animationType;
+
+	            var autoClose = this.props.autoClose;
+	            if (typeof autoClose === 'number' && animationType === 'enter') {
+	                this.autoClose = setTimeout((function () {
+	                    this.props.onClose();
+	                }).bind(this), autoClose);
+	            } else if (this.autoClose !== undefined) {
+	                clearTimeout(this.autoClose);
+	            }
+
+	            return _react2['default'].createElement(
+	                'div',
+	                {
+	                    ref: 'rodal',
+	                    style: style,
+	                    className: "rodal rodal-fade-" + animationType,
+	                    tabIndex: -1
+	                },
+	                Mask,
+	                _react2['default'].createElement(
+	                    RodalBox,
+	                    _extends({}, this.props, { animationType: animationType }),
+	                    this.props.children
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Rodal;
+	})(_react.Component);
+
+	Rodal.propTypes = propTypes;
+	Rodal.defaultProps = defaultProps;
+
+	exports['default'] = Rodal;
+	module.exports = exports['default'];
+
+/***/ },
+/* 176 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(177);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(160)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./rodal.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./rodal.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(159)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".rodal,\n.rodal-mask {\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%; }\n\n.rodal {\n  position: fixed; }\n\n.rodal-mask {\n  position: absolute;\n  background: rgba(0, 0, 0, 0.3); }\n\n.rodal-box {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 90%;\n  height: 60%;\n  padding: 16px;\n  margin-top: -50%;\n  margin-left: -45%;\n  border-radius: 4px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);\n  background-color: rgba(18, 17, 15, 0.7);\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/board_background.jpg\");\n  background-size: 100% 100%; }\n\n@-webkit-keyframes rodal-fade-enter {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes rodal-fade-enter {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n.rodal-fade-enter {\n  -webkit-animation: rodal-fade-enter both ease-in;\n          animation: rodal-fade-enter both ease-in; }\n\n@-webkit-keyframes rodal-fade-leave {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes rodal-fade-leave {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n.rodal-fade-leave {\n  -webkit-animation: rodal-fade-leave both ease-out;\n          animation: rodal-fade-leave both ease-out; }\n\n@-webkit-keyframes rodal-zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1); } }\n\n@keyframes rodal-zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1); } }\n\n.rodal-zoom-enter {\n  -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);\n          animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5); }\n\n@-webkit-keyframes rodal-zoom-leave {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1); }\n  100% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3); } }\n\n@keyframes rodal-zoom-leave {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1); }\n  100% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3); } }\n\n.rodal-zoom-leave {\n  -webkit-animation: rodal-zoom-leave both cubic-bezier(0.4, 0, 0, 1.5);\n          animation: rodal-zoom-leave both cubic-bezier(0.4, 0, 0, 1.5); }\n", ""]);
+
+	// exports
+
 
 /***/ }
 /******/ ]);

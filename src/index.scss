@@ -201,3 +201,10 @@ input[type="search"]::-webkit-search-decoration {
   animation: zoom-enter .3s both cubic-bezier(0.4, 0, 0, 1.5);
 }
 //animation end
+
+#app {
+  background: {
+    image: url('http://7xlrkz.com1.z0.glb.clouddn.com/main_background.jpg');
+    size: cover;
+  };
+}

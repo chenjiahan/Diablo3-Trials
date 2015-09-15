@@ -29,8 +29,10 @@ class Choose extends Component {
         return (
             <div className="choose-container">
                 <img src="http://7xlrkz.com1.z0.glb.clouddn.com/logo.png" className="choose-logo"/>
-                <h1 className="choose-title">暗黑3达人测验</h1>
-                {buttons}
+                <h1 className="choose-title">选择测验难度</h1>
+                <div className="choose-btn-group">
+                    {buttons}
+                </div>
             </div>
         )
     }

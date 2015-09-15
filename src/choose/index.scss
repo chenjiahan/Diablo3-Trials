@@ -6,12 +6,21 @@
   background: $backgroundColor;
 }
 .choose-title {
+  position: absolute;
+  top: 16%;
+  width: 100%;
   color: $btnTextColor;
   text-align: center;
-  margin: .9rem 0 .3rem;
   text-shadow: 0 0 10px rgba(253, 194, 145, .8);
 }
 .choose-logo {
   position: absolute;
-  width: 1.2rem;
+  top: 2%;
+  height: 13%;
+  width: auto;
+}
+.choose-btn-group {
+  position: absolute;
+  top: 33%;
+  width: 100%;
 }

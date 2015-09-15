@@ -20,11 +20,11 @@ class Questions extends Component {
                 currentQuestion: current + 1
             });
         } else {
-            this.submit();
+            this.endAnswer();
         }
     }
 
-    submit() {
+    endAnswer() {
         const answerList = this.state.answerList;
         const correctAnswer = this.props.correctAnswer;
         let grade = 0;
@@ -33,7 +33,7 @@ class Questions extends Component {
                 grade += 10;
             }
         }
-        console.log(grade);
+        this.props.showGradeBoard(grade);
     }
 
     render() {

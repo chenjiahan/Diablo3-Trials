@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './index.scss';
 import Choose from '../choose';
 import Questions from '../questions';
+import Board from '../board';
 import data from './data';
 
 class Controller extends Component {
@@ -9,6 +10,7 @@ class Controller extends Component {
         super(props);
 
         this.state = {
+            grade: 0,
             show: 'choose',
             difficulty: 0,
             questions: [],
@@ -67,6 +69,19 @@ class Controller extends Component {
         });
     }
 
+    showGradeBoard(grade) {
+        this.setState({
+            show: 'board',
+            grade: grade
+        });
+    }
+
+    restart() {
+        this.setState({
+            show: 'choose'
+        });
+    }
+
     render() {
         switch (this.state.show) {
             case 'choose':
@@ -79,6 +94,13 @@ class Controller extends Component {
                         questions={this.state.questions}
                         diffculty={this.state.difficulty}
                         correctAnswer={this.state.correctAnswer}
+                        showGradeBoard={this.showGradeBoard.bind(this)}
+                        />
+                );
+            case 'board':
+                return (
+                    <Board grade={this.state.grade}
+                           restart={this.restart.bind(this)}
                         />
                 );
         }
