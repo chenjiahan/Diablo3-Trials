@@ -18720,7 +18720,7 @@
 	                options[0] = temp;
 	            }
 	            this.setState({
-	                questions: questions,
+	                questions: result,
 	                correctAnswer: correctAnswer
 	            });
 	        }
@@ -18966,15 +18966,21 @@
 	                    currentQuestion: current + 1
 	                });
 	            } else {
-	                console.log(this.state.answerList);
 	                this.submit();
 	            }
 	        }
 	    }, {
 	        key: 'submit',
 	        value: function submit() {
-	            console.log(this.state.answerList);
-	            console.log(this.props.correctAnswer);
+	            var answerList = this.state.answerList;
+	            var correctAnswer = this.props.correctAnswer;
+	            var grade = 0;
+	            for (var i = 0; i < 10; i++) {
+	                if (answerList[i] === correctAnswer[i]) {
+	                    grade += 10;
+	                }
+	            }
+	            console.log(grade);
 	        }
 	    }, {
 	        key: 'render',

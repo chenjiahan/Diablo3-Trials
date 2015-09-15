@@ -54,7 +54,7 @@ class Controller extends Component {
             options[0] = temp;
         }
         this.setState({
-            questions,
+            questions: result,
             correctAnswer
         });
     }

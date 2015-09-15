@@ -20,14 +20,20 @@ class Questions extends Component {
                 currentQuestion: current + 1
             });
         } else {
-            console.log(this.state.answerList);
             this.submit();
         }
     }
 
     submit() {
-        console.log(this.state.answerList);
-        console.log(this.props.correctAnswer);
+        const answerList = this.state.answerList;
+        const correctAnswer = this.props.correctAnswer;
+        let grade = 0;
+        for(let i = 0; i < 10; i++) {
+            if(answerList[i] === correctAnswer[i]) {
+                grade += 10;
+            }
+        }
+        console.log(grade);
     }
 
     render() {
