@@ -179,12 +179,12 @@ input[type="search"]::-webkit-search-decoration {
     opacity: 0;
   }
   to {
-    transform: scale3d(1, 1, .1);
+    transform: scale3d(1, 1, 1);
     opacity: 1;
   }
 }
 .door-enter {
-  animation: door-enter .2s both ease-in-out;
+  animation: door-enter .6s both ease;
 }
 
 @keyframes zoom-enter {

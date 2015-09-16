@@ -36,7 +36,7 @@ class Questions extends Component {
         this.state = {
             currentQuestion: 0,
             answerList: []
-        }
+        };
         this.props.showGradeBoard(grade);
     }
 
@@ -66,7 +66,7 @@ class Questions extends Component {
                 <div className="q-info">
                     <span>第 {current + 1} 题 / 共 10 题</span>
                 </div>
-                <div className="q-question">
+                <div className="q-question door-enter">
                     <span>{questions.question}</span>
                 </div>
                 <div className="q-options">

@@ -105,6 +105,7 @@ class Controller extends Component {
                 return (
                     <Board grade={this.state.grade}
                            restart={this.restart.bind(this)}
+                           diffculty={this.state.difficulty}
                         />
                 );
         }

@@ -2,14 +2,14 @@
 
 $prefix-cls: board;
 
-.#{prefix}-text {
+.#{$prefix-cls}-text {
   display: block;
   font-size: .26rem;
   line-height: .5rem;
   color: $textColor;
   text-align: center;
 }
-.#{prefix}-grade {
+.#{$prefix-cls}-grade {
   position: absolute;
   top: 42%;
   left: 50%;
@@ -18,7 +18,7 @@ $prefix-cls: board;
   color: $btnTextColor;
   transform: translate3d(-50%, 0, 0);
 }
-.#{prefix}-btn {
+.#{$prefix-cls}-btn {
   position: absolute;
   bottom: 5%;
   left: 10%;
