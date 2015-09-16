@@ -1,11 +1,13 @@
 @import '../config';
 
-.choose-container {
+$prefix-cls: choose;
+
+.#{$prefix-cls}-container {
   height: 100%;
   overflow: hidden;
   background: $backgroundColor;
 }
-.choose-title {
+.#{$prefix-cls}-title {
   position: absolute;
   top: 16%;
   width: 100%;
@@ -13,13 +15,13 @@
   text-align: center;
   text-shadow: 0 0 10px rgba(253, 194, 145, .8);
 }
-.choose-logo {
+.#{$prefix-cls}-logo {
   position: absolute;
   top: 2%;
   height: 13%;
   width: auto;
 }
-.choose-btn-group {
+.#{$prefix-cls}-btn-group {
   position: absolute;
   top: 33%;
   width: 100%;

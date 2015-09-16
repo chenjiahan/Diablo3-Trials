@@ -18663,7 +18663,7 @@
 
 	var _board2 = _interopRequireDefault(_board);
 
-	var _data = __webpack_require__(177);
+	var _data = __webpack_require__(179);
 
 	var _data2 = _interopRequireDefault(_data);
 
@@ -19152,7 +19152,7 @@
 
 	var _rodal2 = _interopRequireDefault(_rodal);
 
-	__webpack_require__(178);
+	__webpack_require__(177);
 
 	var Board = (function (_Component) {
 	    _inherits(Board, _Component);
@@ -19502,6 +19502,46 @@
 
 /***/ },
 /* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(178);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(160)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./index.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./index.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 178 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(159)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".prefix-text {\n  display: block;\n  font-size: .26rem;\n  line-height: .5rem;\n  color: #A99877;\n  text-align: center; }\n\n.prefix-grade {\n  position: absolute;\n  top: 42%;\n  left: 50%;\n  font-size: .4rem;\n  text-align: center;\n  color: #FDC291;\n  -webkit-transform: translate3d(-50%, 0, 0);\n          transform: translate3d(-50%, 0, 0); }\n\n.prefix-btn {\n  position: absolute;\n  bottom: 5%;\n  left: 10%; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 179 */
 /***/ function(module, exports) {
 
 	//普通
@@ -19672,46 +19712,6 @@
 
 	exports['default'] = data;
 	module.exports = exports['default'];
-
-/***/ },
-/* 178 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(179);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(160)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./index.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./../../node_modules/sass-loader/index.js!./index.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 179 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(159)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".board-text {\n  display: block;\n  font-size: .26rem;\n  line-height: .5rem;\n  color: #A99877;\n  text-align: center; }\n\n.board-grade {\n  position: absolute;\n  top: 42%;\n  left: 50%;\n  font-size: .4rem;\n  text-align: center;\n  color: #FDC291;\n  -webkit-transform: translate3d(-50%, 0, 0);\n          transform: translate3d(-50%, 0, 0); }\n\n.board-btn {\n  position: absolute;\n  bottom: 5%;\n  left: 10%; }\n", ""]);
-
-	// exports
-
 
 /***/ }
 /******/ ]);

@@ -1,10 +1,12 @@
 @import '../config';
 
-.q-container {
+$prefix-cls: q;
+
+.#{$prefix-cls}-container {
   height: 100%;
   background: $backgroundColor;
 }
-.q-info {
+.#{$prefix-cls}-info {
   position: absolute;
   width: 100%;
   top: .2rem;
@@ -12,7 +14,7 @@
   text-align: center;
   line-height: .2rem;
 }
-.q-question {
+.#{$prefix-cls}-question {
   position: absolute;
   height: 22%;
   width: 90%;
@@ -29,12 +31,12 @@
     font-size: .18rem;
   }
 }
-.q-options {
+.#{$prefix-cls}-options {
   position: absolute;
   width: 100%;
   top: 38%;
 }
-.q-toolbar {
+.#{$prefix-cls}-toolbar {
   position: fixed;
   left: 0;
   bottom: 0;
