@@ -38,7 +38,11 @@ class Controller extends Component {
             randomNumbers.push(random);
         }
         for(let i = 0; i < QUESTION_NUM; i++) {
-            result.push(questions[randomNumbers[i]]);
+            //clone
+            result.push({
+                question: questions[randomNumbers[i]].question,
+                options: questions[randomNumbers[i]].options.slice(0)
+            });
         }
 
         //打乱选项并保存正确选项

@@ -1,0 +1,23 @@
+@import '../config';
+
+.board-text {
+  display: block;
+  font-size: .26rem;
+  line-height: .5rem;
+  color: $textColor;
+  text-align: center;
+}
+.board-grade {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  font-size: .4rem;
+  text-align: center;
+  color: $btnTextColor;
+  transform: translate3d(-50%, 0, 0);
+}
+.board-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+}

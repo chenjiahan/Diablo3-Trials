@@ -33,6 +33,10 @@ class Questions extends Component {
                 grade += 10;
             }
         }
+        this.state = {
+            currentQuestion: 0,
+            answerList: []
+        }
         this.props.showGradeBoard(grade);
     }
 
