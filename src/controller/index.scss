@@ -1,9 +1,12 @@
 #app {
   position: relative;
-  @media ( max-width: 480px ) {
-    width: 100%;
-  }
-  @media ( min-width: 481px) {
+  width: 100%;
+  background: {
+    image: url('http://7xlrkz.com1.z0.glb.clouddn.com/main_background.jpg');
+    size: cover;
+    position: center;
+  };
+  @media ( min-width: 480px) {
     width: 480px;
     margin: 0 auto;
   }

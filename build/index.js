@@ -54,7 +54,7 @@
 
 	__webpack_require__(157);
 
-	var _startButton = __webpack_require__(161);
+	var _startButton = __webpack_require__(162);
 
 	var _startButton2 = _interopRequireDefault(_startButton);
 
@@ -18210,7 +18210,7 @@
 	var content = __webpack_require__(158);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(160)(content, {});
+	var update = __webpack_require__(161)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -18235,7 +18235,7 @@
 
 
 	// module
-	exports.push([module.id, "*,\n*:before,\n*:after {\n  box-sizing: border-box; }\n\nhtml {\n  font-size: 80px;\n  -webkit-text-size-adjust: 100%;\n      -ms-text-size-adjust: 100%;\n          text-size-adjust: 100%;\n  font-family: Arial, \"Microsoft Yahei\", Helvetica, sans-serif; }\n  @media (min-device-width: 330px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 360px) {\n    html {\n      font-size: 95px; } }\n  @media (min-device-width: 400px) {\n    html {\n      font-size: 110px; } }\n  @media (max-device-width: 321px) and (min-device-height: 500px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 375px) and (max-device-width: 667px) {\n    html {\n      font-size: 115px; } }\n  @media (min-device-width: 414px) and (max-device-width: 736px) {\n    html {\n      font-size: 125px; } }\n\nbody {\n  font-size: .14rem;\n  line-height: 1.42857143; }\n\nfooter,\nheader,\nnav,\nsection {\n  display: block; }\n\na {\n  text-decoration: none;\n  background-color: transparent; }\n\na:hover {\n  outline: 0;\n  text-decoration: none; }\n\na:focus {\n  outline: none;\n  text-decoration: none; }\n\na:active {\n  outline: 0; }\n\np {\n  margin: 0 0 10px 0; }\n\nb,\nstrong {\n  font-weight: bold; }\n\ndfn {\n  font-style: italic; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-weight: normal; }\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n\nimg {\n  border: 0; }\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  font: inherit;\n  margin: 0; }\n\nbutton {\n  overflow: visible; }\n\nbutton:focus {\n  outline: none !important; }\n\nbutton,\nselect {\n  text-transform: none; }\n\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer; }\n\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\nbutton,\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  border: none; }\n\ninput[type=\"submit\"]:focus {\n  outline: none; }\n\ninput {\n  line-height: normal; }\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0; }\n\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  box-sizing: content-box; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n.clearfix:before,\n.clearfix:after {\n  content: \" \";\n  display: table; }\n\n.clearfix:after {\n  clear: both; }\n\n.btn {\n  cursor: pointer;\n  width: 80%;\n  height: .54rem;\n  text-align: center;\n  border-radius: 4px;\n  margin: 0 auto 0.15rem;\n  -webkit-tap-highlight-color: transparent;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/button_background.png\");\n  background-size: 100% 200%;\n  background-position: 0 0; }\n  .btn span {\n    color: #FDC291;\n    font-size: .16rem;\n    line-height: .52rem;\n    text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n  .btn:focus,\n  .btn:active {\n    outline: none;\n    background-position: 0 -100%; }\n\n@-webkit-keyframes door-enter {\n  from {\n    -webkit-transform: scale3d(0, 1, 1);\n            transform: scale3d(0, 1, 1);\n    opacity: 0; }\n  to {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n@keyframes door-enter {\n  from {\n    -webkit-transform: scale3d(0, 1, 1);\n            transform: scale3d(0, 1, 1);\n    opacity: 0; }\n  to {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n.door-enter {\n  -webkit-animation: door-enter 0.6s both ease;\n          animation: door-enter 0.6s both ease; }\n\n@-webkit-keyframes zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n    opacity: 0; }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n@keyframes zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n    opacity: 0; }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n.zoom-enter {\n  -webkit-animation: zoom-enter 0.3s both cubic-bezier(0.4, 0, 0, 1.5);\n          animation: zoom-enter 0.3s both cubic-bezier(0.4, 0, 0, 1.5); }\n\n#app {\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/main_background.jpg\");\n  background-size: cover; }\n", ""]);
+	exports.push([module.id, "*,\n*:before,\n*:after {\n  box-sizing: border-box; }\n\nhtml {\n  font-size: 80px;\n  -webkit-text-size-adjust: 100%;\n      -ms-text-size-adjust: 100%;\n          text-size-adjust: 100%;\n  font-family: Arial, \"Microsoft Yahei\", Helvetica, sans-serif; }\n  @media (min-device-width: 330px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 360px) {\n    html {\n      font-size: 95px; } }\n  @media (min-device-width: 400px) {\n    html {\n      font-size: 110px; } }\n  @media (max-device-width: 321px) and (min-device-height: 500px) {\n    html {\n      font-size: 90px; } }\n  @media (min-device-width: 375px) and (max-device-width: 667px) {\n    html {\n      font-size: 115px; } }\n  @media (min-device-width: 414px) and (max-device-width: 736px) {\n    html {\n      font-size: 125px; } }\n\nbody {\n  font-size: .14rem;\n  line-height: 1.42857143; }\n\nfooter,\nheader,\nnav,\nsection {\n  display: block; }\n\na {\n  text-decoration: none;\n  background-color: transparent; }\n\na:hover {\n  outline: 0;\n  text-decoration: none; }\n\na:focus {\n  outline: none;\n  text-decoration: none; }\n\na:active {\n  outline: 0; }\n\np {\n  margin: 0 0 10px 0; }\n\nb,\nstrong {\n  font-weight: bold; }\n\ndfn {\n  font-style: italic; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-weight: normal; }\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n\nimg {\n  border: 0; }\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  font: inherit;\n  margin: 0; }\n\nbutton {\n  overflow: visible; }\n\nbutton:focus {\n  outline: none !important; }\n\nbutton,\nselect {\n  text-transform: none; }\n\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer; }\n\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\nbutton,\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  border: none; }\n\ninput[type=\"submit\"]:focus {\n  outline: none; }\n\ninput {\n  line-height: normal; }\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0; }\n\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  box-sizing: content-box; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n.clearfix:before,\n.clearfix:after {\n  content: \" \";\n  display: table; }\n\n.clearfix:after {\n  clear: both; }\n\n.btn {\n  cursor: pointer;\n  width: 80%;\n  height: .54rem;\n  text-align: center;\n  border-radius: 4px;\n  margin: 0 auto 0.15rem;\n  -webkit-tap-highlight-color: transparent;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/button_background.jpg\");\n  background-size: 100% 300%;\n  background-position: 0 0; }\n  .btn span {\n    color: #FDC291;\n    font-size: .16rem;\n    line-height: .52rem;\n    text-shadow: 0 0 10px rgba(253, 194, 145, 0.8); }\n  .btn:focus,\n  .btn:active {\n    outline: none;\n    background-position: 0 -100%; }\n\n.btn-correct {\n  background-position: 0 -200%; }\n  .btn-correct:focus,\n  .btn-correct:active {\n    background-position: 0 -200%; }\n\n@-webkit-keyframes door-enter {\n  from {\n    -webkit-transform: scale3d(0, 1, 1);\n            transform: scale3d(0, 1, 1);\n    opacity: 0; }\n  to {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n@keyframes door-enter {\n  from {\n    -webkit-transform: scale3d(0, 1, 1);\n            transform: scale3d(0, 1, 1);\n    opacity: 0; }\n  to {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n.door-enter {\n  -webkit-animation: door-enter 0.36s both ease;\n          animation: door-enter 0.36s both ease; }\n\n@-webkit-keyframes zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n    opacity: 0; }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n@keyframes zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n    opacity: 0; }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1);\n    opacity: 1; } }\n\n.zoom-enter {\n  -webkit-animation: zoom-enter 0.3s both cubic-bezier(0.4, 0, 0, 1.5);\n          animation: zoom-enter 0.3s both cubic-bezier(0.4, 0, 0, 1.5); }\n", ""]);
 
 	// exports
 
@@ -18296,7 +18296,8 @@
 	};
 
 /***/ },
-/* 160 */
+/* 160 */,
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -18521,7 +18522,7 @@
 
 
 /***/ },
-/* 161 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18544,9 +18545,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(162);
+	__webpack_require__(163);
 
-	var _controller = __webpack_require__(164);
+	var _controller = __webpack_require__(165);
 
 	var _controller2 = _interopRequireDefault(_controller);
 
@@ -18586,16 +18587,16 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 162 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(163);
+	var content = __webpack_require__(164);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(160)(content, {});
+	var update = __webpack_require__(161)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -18612,7 +18613,7 @@
 	}
 
 /***/ },
-/* 163 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(159)();
@@ -18626,7 +18627,7 @@
 
 
 /***/ },
-/* 164 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18649,21 +18650,21 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(165);
+	__webpack_require__(166);
 
-	var _choose = __webpack_require__(167);
+	var _choose = __webpack_require__(168);
 
 	var _choose2 = _interopRequireDefault(_choose);
 
-	var _questions = __webpack_require__(170);
+	var _questions = __webpack_require__(171);
 
 	var _questions2 = _interopRequireDefault(_questions);
 
-	var _board = __webpack_require__(173);
+	var _board = __webpack_require__(174);
 
 	var _board2 = _interopRequireDefault(_board);
 
-	var _data = __webpack_require__(179);
+	var _data = __webpack_require__(180);
 
 	var _data2 = _interopRequireDefault(_data);
 
@@ -18786,16 +18787,16 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 165 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(166);
+	var content = __webpack_require__(167);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(160)(content, {});
+	var update = __webpack_require__(161)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -18812,7 +18813,7 @@
 	}
 
 /***/ },
-/* 166 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(159)();
@@ -18820,13 +18821,13 @@
 
 
 	// module
-	exports.push([module.id, "#app {\n  position: relative; }\n  @media (max-width: 480px) {\n    #app {\n      width: 100%; } }\n  @media (min-width: 481px) {\n    #app {\n      width: 480px;\n      margin: 0 auto; } }\n", ""]);
+	exports.push([module.id, "#app {\n  position: relative;\n  width: 100%;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/main_background.jpg\");\n  background-size: cover;\n  background-position: center; }\n  @media (min-width: 480px) {\n    #app {\n      width: 480px;\n      margin: 0 auto; } }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 167 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18849,7 +18850,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(168);
+	__webpack_require__(169);
 
 	var Choose = (function (_Component) {
 	    _inherits(Choose, _Component);
@@ -18911,16 +18912,16 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 168 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(169);
+	var content = __webpack_require__(170);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(160)(content, {});
+	var update = __webpack_require__(161)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -18937,7 +18938,7 @@
 	}
 
 /***/ },
-/* 169 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(159)();
@@ -18951,7 +18952,7 @@
 
 
 /***/ },
-/* 170 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18974,7 +18975,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(171);
+	__webpack_require__(172);
 
 	var Questions = (function (_Component) {
 	    _inherits(Questions, _Component);
@@ -18986,13 +18987,37 @@
 
 	        this.state = {
 	            currentQuestion: 0,
-	            answerList: []
+	            answerList: [],
+	            showAnswer: -1
 	        };
 	    }
 
 	    _createClass(Questions, [{
+	        key: 'handleChoose',
+	        value: function handleChoose(index) {
+	            var _this = this;
+
+	            //显示答案时,不响应点击事件
+	            if (this.state.showAnswer !== -1) return;
+
+	            //显示答案
+	            var correct = this.props.correctAnswer[this.state.currentQuestion];
+	            this.setState({
+	                showAnswer: correct
+	            });
+
+	            //选错答案后,跳转延迟更长
+	            var delay = correct === index ? 500 : 1500;
+	            setTimeout(function () {
+	                _this.nextQuestion(index);
+	            }, delay);
+	        }
+	    }, {
 	        key: 'nextQuestion',
 	        value: function nextQuestion(index) {
+	            this.setState({
+	                showAnswer: -1
+	            });
 	            var current = this.state.currentQuestion;
 	            this.state.answerList[current] = index;
 	            if (current < 9) {
@@ -19031,12 +19056,18 @@
 	                    animationDelay: index * 100 + 'ms',
 	                    WebkitAnimationDelay: index * 100 + 'ms'
 	                };
+	                var className = undefined;
+	                if (index === this.state.showAnswer) {
+	                    className = 'btn zoom-enter btn-correct';
+	                } else {
+	                    className = 'btn zoom-enter';
+	                }
 	                return _react2['default'].createElement(
 	                    'div',
 	                    {
 	                        key: index,
-	                        className: 'btn zoom-enter',
-	                        onClick: this.nextQuestion.bind(this, index),
+	                        className: className,
+	                        onClick: this.handleChoose.bind(this, index),
 	                        style: delay
 	                    },
 	                    _react2['default'].createElement(
@@ -19086,16 +19117,16 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 171 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(172);
+	var content = __webpack_require__(173);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(160)(content, {});
+	var update = __webpack_require__(161)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -19112,7 +19143,7 @@
 	}
 
 /***/ },
-/* 172 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(159)();
@@ -19120,13 +19151,13 @@
 
 
 	// module
-	exports.push([module.id, ".q-container {\n  height: 100%;\n  background: rgba(18, 17, 15, 0.7); }\n\n.q-info {\n  position: absolute;\n  width: 100%;\n  top: .2rem;\n  color: #A99877;\n  text-align: center;\n  line-height: .2rem; }\n\n.q-question {\n  position: absolute;\n  height: 22%;\n  width: 86%;\n  top: .6rem;\n  left: 7%;\n  padding: 0.2rem 0.3rem;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/question_background.jpg\");\n  background-size: 100% 100%;\n  background-repeat: no-repeat; }\n  .q-question span {\n    color: #35110f;\n    font-size: .18rem; }\n\n.q-options {\n  position: absolute;\n  width: 100%;\n  top: 38%; }\n\n.q-toolbar {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  height: .4rem;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.2); }\n", ""]);
+	exports.push([module.id, ".q-container {\n  height: 100%;\n  background: rgba(18, 17, 15, 0.7); }\n\n.q-info {\n  position: absolute;\n  width: 100%;\n  top: .2rem;\n  color: #A99877;\n  text-align: center;\n  line-height: .2rem; }\n\n.q-question {\n  position: absolute;\n  height: 22%;\n  width: 86%;\n  top: .6rem;\n  left: 7%;\n  padding: 0.2rem 0.3rem;\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/board_background.jpg\");\n  background-position: -100% 0;\n  background-size: 200% 100%; }\n  .q-question span {\n    color: #35110f;\n    font-size: .18rem; }\n\n.q-options {\n  position: absolute;\n  width: 100%;\n  top: 38%; }\n\n.q-toolbar {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  height: .4rem;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.2); }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 173 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19149,11 +19180,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _rodal = __webpack_require__(174);
+	var _rodal = __webpack_require__(175);
 
 	var _rodal2 = _interopRequireDefault(_rodal);
 
-	__webpack_require__(177);
+	__webpack_require__(178);
 
 	var Board = (function (_Component) {
 	    _inherits(Board, _Component);
@@ -19206,7 +19237,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 174 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19231,7 +19262,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(175);
+	__webpack_require__(176);
 
 	var propTypes = {
 	    visible: _react.PropTypes.bool,
@@ -19462,16 +19493,16 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 175 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(176);
+	var content = __webpack_require__(177);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(160)(content, {});
+	var update = __webpack_require__(161)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -19488,7 +19519,7 @@
 	}
 
 /***/ },
-/* 176 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(159)();
@@ -19496,22 +19527,22 @@
 
 
 	// module
-	exports.push([module.id, ".rodal,\n.rodal-mask {\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%; }\n\n.rodal {\n  position: fixed; }\n\n.rodal-mask {\n  position: absolute;\n  background: rgba(0, 0, 0, 0.3); }\n\n.rodal-box {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 90%;\n  height: 60%;\n  padding: 16px;\n  margin-top: -50%;\n  margin-left: -45%;\n  border-radius: 4px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);\n  background-color: rgba(18, 17, 15, 0.7);\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/board_background.jpg\");\n  background-size: 100% 100%; }\n\n@-webkit-keyframes rodal-fade-enter {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes rodal-fade-enter {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n.rodal-fade-enter {\n  -webkit-animation: rodal-fade-enter both ease-in;\n          animation: rodal-fade-enter both ease-in; }\n\n@-webkit-keyframes rodal-fade-leave {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes rodal-fade-leave {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n.rodal-fade-leave {\n  -webkit-animation: rodal-fade-leave both ease-out;\n          animation: rodal-fade-leave both ease-out; }\n\n@-webkit-keyframes rodal-zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1); } }\n\n@keyframes rodal-zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1); } }\n\n.rodal-zoom-enter {\n  -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);\n          animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5); }\n\n@-webkit-keyframes rodal-zoom-leave {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1); }\n  100% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3); } }\n\n@keyframes rodal-zoom-leave {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1); }\n  100% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3); } }\n\n.rodal-zoom-leave {\n  -webkit-animation: rodal-zoom-leave both cubic-bezier(0.4, 0, 0, 1.5);\n          animation: rodal-zoom-leave both cubic-bezier(0.4, 0, 0, 1.5); }\n", ""]);
+	exports.push([module.id, ".rodal,\n.rodal-mask {\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%; }\n\n.rodal {\n  position: fixed; }\n\n.rodal-mask {\n  position: absolute;\n  background: rgba(0, 0, 0, 0.3); }\n\n.rodal-box {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 90%;\n  height: 60%;\n  padding: 16px;\n  margin-top: -50%;\n  margin-left: -45%;\n  border-radius: 4px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);\n  background-color: rgba(18, 17, 15, 0.7);\n  background-image: url(\"http://7xlrkz.com1.z0.glb.clouddn.com/board_background.jpg\");\n  background-size: 200% 100%; }\n\n@-webkit-keyframes rodal-fade-enter {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes rodal-fade-enter {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n.rodal-fade-enter {\n  -webkit-animation: rodal-fade-enter both ease-in;\n          animation: rodal-fade-enter both ease-in; }\n\n@-webkit-keyframes rodal-fade-leave {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes rodal-fade-leave {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n.rodal-fade-leave {\n  -webkit-animation: rodal-fade-leave both ease-out;\n          animation: rodal-fade-leave both ease-out; }\n\n@-webkit-keyframes rodal-zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1); } }\n\n@keyframes rodal-zoom-enter {\n  0% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3); }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1); } }\n\n.rodal-zoom-enter {\n  -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);\n          animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5); }\n\n@-webkit-keyframes rodal-zoom-leave {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1); }\n  100% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3); } }\n\n@keyframes rodal-zoom-leave {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n            transform: scale3d(1, 1, 1); }\n  100% {\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3); } }\n\n.rodal-zoom-leave {\n  -webkit-animation: rodal-zoom-leave both cubic-bezier(0.4, 0, 0, 1.5);\n          animation: rodal-zoom-leave both cubic-bezier(0.4, 0, 0, 1.5); }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 177 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(178);
+	var content = __webpack_require__(179);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(160)(content, {});
+	var update = __webpack_require__(161)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -19528,7 +19559,7 @@
 	}
 
 /***/ },
-/* 178 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(159)();
@@ -19542,7 +19573,7 @@
 
 
 /***/ },
-/* 179 */
+/* 180 */
 /***/ function(module, exports) {
 
 	//普通

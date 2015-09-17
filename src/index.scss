@@ -152,8 +152,8 @@ input[type="search"]::-webkit-search-decoration {
   margin: 0 auto .15rem;
   -webkit-tap-highlight-color:rgba(0,0,0,0);
   background: {
-    image: url('http://7xlrkz.com1.z0.glb.clouddn.com/button_background.png');
-    size: 100% 200%;
+    image: url('http://7xlrkz.com1.z0.glb.clouddn.com/button_background.jpg');
+    size: 100% 300%;
     position: 0 0;
   };
   span {
@@ -167,6 +167,17 @@ input[type="search"]::-webkit-search-decoration {
     outline: none;
     background: {
       position: 0 -100%;
+    };
+  }
+}
+.btn-correct {
+  background: {
+    position: 0 -200%;
+  };
+  &:focus,
+  &:active {
+    background: {
+      position: 0 -200%;
     };
   }
 }
@@ -184,7 +195,7 @@ input[type="search"]::-webkit-search-decoration {
   }
 }
 .door-enter {
-  animation: door-enter .6s both ease;
+  animation: door-enter .36s both ease;
 }
 
 @keyframes zoom-enter {
@@ -202,9 +213,3 @@ input[type="search"]::-webkit-search-decoration {
 }
 //animation end
 
-#app {
-  background: {
-    image: url('http://7xlrkz.com1.z0.glb.clouddn.com/main_background.jpg');
-    size: cover;
-  };
-}

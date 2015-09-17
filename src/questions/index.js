@@ -8,11 +8,32 @@ class Questions extends Component {
 
         this.state = {
             currentQuestion: 0,
-            answerList: []
+            answerList: [],
+            showAnswer: -1
         }
     }
 
+    handleChoose(index) {
+        //显示答案时,不响应点击事件
+        if(this.state.showAnswer !== -1) return;
+
+        //显示答案
+        const correct = this.props.correctAnswer[this.state.currentQuestion];
+        this.setState({
+            showAnswer: correct
+        });
+
+        //选错答案后,跳转延迟更长
+        let delay = correct === index ? 500 : 1500;
+        setTimeout(() => {
+            this.nextQuestion(index);
+        }, delay)
+    }
+
     nextQuestion(index) {
+        this.setState({
+            showAnswer: -1
+        });
         const current = this.state.currentQuestion;
         this.state.answerList[current] = index;
         if(current < 9) {
@@ -49,11 +70,17 @@ class Questions extends Component {
                 animationDelay: index * 100 + 'ms',
                 WebkitAnimationDelay: index * 100 + 'ms'
             };
+            let className;
+            if(index === this.state.showAnswer) {
+                className = 'btn zoom-enter btn-correct'
+            } else {
+                className = 'btn zoom-enter'
+            }
             return (
                 <div
                     key={index}
-                    className="btn zoom-enter"
-                    onClick={this.nextQuestion.bind(this, index)}
+                    className={className}
+                    onClick={this.handleChoose.bind(this, index)}
                     style={delay}
                     >
                     <span>{value}</span>
